@@ -65,56 +65,175 @@
         <!-- 2. SECCIÓN HERO (Presentación principal) -->
         <section id="hero" class="hero-section">
             <div class="hero-content">
+                <!-- Etiqueta superior opcional del diseño -->
+                <div class="hero-badge">
+                    <span>🍰 ALTA PASTELERÍA ARTESANAL • TORTAS DE AUTOR</span>
+                </div>
                 <h1>Hacemos Realidad la <span>Torta de tus Sueños</span></h1>
-                <p>Descripción breve sobre la personalización de tortas...</p>
+                <p>Cada torta es única y personalizada para ti :D...</p>
+                <p>Configura tus sabores, rellenos, decoración y tamaño de tu torta...</p>
                 <div class="hero-buttons">
-                    <button class="btn-primary">Quiero mi Torta</button>
+                    <button class="btn-primary">Quiero mi Torta ✨</button>
                     <button class="btn-secondary">Ver Diseños</button>
                 </div>
                 <div class="hero-stats">
-                    <!-- Contenedores para las estadísticas (+3.5k, 100%, 15k) -->
+                    <!-- Contenedores para las estadísticas (+3.5k, 100%, 15k) -->  
+                    <div class="stat-item">
+                        <h3>+2,500</h3>
+                        <p>Celebraciones dulces</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Mantequilla & Cacao Puro</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>48h</h3>
+                        <p>Anticipación mínima</p>
+                    </div>
+
                 </div>
             </div>
             <div class="hero-image">
-                <img src="torta-principal.jpg" alt="Torta de bodas decorada">
+                <!-- Insignia flotante superior (Calificación) -->
+                <div class="floating-badge badge-top">
+                    <span>⭐ 4.9 / 5.0 <small>(+480 reviews)</small></span>
+                </div>  
+                <img src="./Torta HelloKitty.jpeg" alt="Torta decorada" width="200">
+            </div>
+            <!-- Insignia flotante inferior -->
+            <div class="floating-badge badge-bottom">
+                <div class="badge-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="8" r="7"></circle>
+                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                    </svg>
+                </div>
+                <div class="badge-text">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAA1CAYAAADh5qNwAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEPklEQVR4nO1aS4hcRRQ955ToiKIYHE2ijqJBRfxAdKUYvwvxs1AjuNBkkeAuZgTB4EKyETS7+CUICi5ciPGDIoJ/NCIKfqIShsQYBsKQiEYz6pjMZFqOc3vyfNTrbhc9/Rr6QvH6vbq3qs6rW/fXDxjQgJp0gqQHSL4gadT36GNiSukuSXskNQptr6T7AAh9RpdL+qQEpty+AHAl+oCWhJodyYCYzjw7Yn7LoYZ0nKQNkg5mFr4jpXQzgCFffZ/hsdwGj4M6UErpNkm7Mgs9IOkhAKeRfEzSHyS3AFjsMyXp54zMuKRVvcRzIcm3K1TqxVj8Kkn7Sv2/SFofYDdLmimPQfIDAJcuJJiTST6dOyOxmMsAXCvpmzaGwmp5k/ktlzuDnsfzocs0JGl7ZgG7U0p3AjjLu9QGTPlFvAngXMt7nAzPt563a4hSSitLE05KehjAqSQflTRVsfjDkh6Ma65/yvIex+PFuPP9KaU7ugbKZ6Ew2QyASyTdGw611W48Z3lf2+ycx7nH56nkFtZ3E9RoYaJdAM7pQMWmrV4kH/e1wl/9p8W4RYs6ulCgxgCc38GZeT6ldEOo0fXhnNuB8rhjdQU1Ezwfx/2nAM5rt1t1AnWA5KtWM0lrAVxjX2WzXTr0NuOL3W8+81sunHW9QJF8rRmZO3Ig+X5ECLOlnfD9uPvNZ/45G8LXawdKc8AcBp0taWcHBsTtpzAim+uqfo2C+V4q6fs2gCx/Jsmn6nymGgVgL3nBkiYqAE0AOKPKEtYSlI4urGq3vutAtnagpiJOPFTRfxjA8ZL+6idQX0UI5d+HSD4BYDnJJ5tAAVws6eu+AcW5SP1uki/b2aaUbiX5hq8ARsKUr6yK6HsJahLAKSS3ZhbmjPcYACskbSv1bfNz95sv80K2etxSpD7aTVBrS4v4zGoWsd18nkXyQ5LvtDLp7jdf4dl2jxNqWX4Ra7oGKvzPZDm+I/kMgOGK9L1da6b3p1dk1Ac9L7pMKyoy1F8l3V8otFRZvmK67ghkiaR1Aa7MsztUdUHo2EgYf88sZCyldAuAC0i+VaF67+XUttD+JLmxq2l8C1rqt50rXpJ8F8BFKaUbJf0Qz3dGALvMljEDZjYs5ghqQFc4V8o5WQerPm9R0LS13Cjp7wzvlwCuQo1oyLFcGIpcvWK/UxNfM317o4DJaLWh4cI5WBS7UVVZahQiDe/iSVGDf8XVJNQMVKNUOh6pihiatT7vTOzuv5avzqAaTQfs6mtK6bqoUfwm6SPfh8yycmW29qB01DE7aVxeMM92B4/kjEW/gGoUna2kzyX9WMXTj6Aa7doA1ALQAJQGoHpHwwNQGoDqGbUCNRvp/tUkn838YdB3oCYiC56nSBrH+xIU5zLYRS0+W9hSd1AnFj7y2N/pv+kppdsL1afp2n02J2k1yU2uJv1PUVefNvX6850BoQf0D8kUe6AWhc58AAAAAElFTkSuQmCC" alt="external-Star-Badge-awards-and-badges-vectorslab-glyph-vectorslab-4">
+                    <strong>Diseño Exacto</strong>
+                    <span>Fiel a tu referencia</span>
+                </div>
             </div>
         </section>
 
         <!-- 3. SECCIÓN: SELECCIÓN DE OCASIÓN (Iconos/Categorías) -->
         <section id="ocasiones" class="grid-section">
             <h2>Elige la Ocasión de tu Evento</h2>
+            <p> Filtros de Inspiración rápida diseñados para cada tipo de fiesta</p>
+            <p> y memoria especial</p>
             <div class="categories-grid">
                 <!-- Botones o tarjetas interactivas -->
-                <button class="category-card">Matrimonio</button>
-                <button class="category-card">Cumpleaños</button>
-                <button class="category-card">Baby Shower</button>
-                <!-- Repetir para el resto de categorías -->
+                <button class="category-card">
+                    <div class="icon-container">
+                      <!-- Icono de confeti en SVG -->
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyUlEQVR4nO2aW4hNURjHf0YuhVzKZdTEyLURiTzILZfkVkopRFKTTKSkZDzgwS2lEclMKA/Mk2aQeFA8ICKU5EGMccttMO63maNV36nVtvdel73PGab519d0zvrOWt9/f5f1rbUH2pAYJbQClAJNwFr+cxLNQEb+/nNkGoBfwDPgJDA7RKdMI5GVZvk+L7CJ50yIHAc6yPhICacwvSYZD8MY4ChQB3wX/bd4oEwWMj21TIRUJvDIWvFy2LzOJPR4LvMgon433mPO2SGkvYi4Pr1MjBz28PIVw5xW8InntzGLPnDMu64x6yt5jQN8Kkx7Sc77gd99c1kYGBtBYAXQyXGuv8i4lMkFAQM+WfxmFHAWaIzxRDsfEq5VS0fvgAGPDfqDgA+GnHCuVGn0RR0CBlww6FdakHhBC6BXwIgdBv27FkQ20QIYETBiskE/Kqw+AdeBZbk2WFWQPcAr4AtwW57+Ks2YeqDAME/YxldDHrHLIiTWG+boF0HkfYjuQOCS/DXCVrm7eEEtOhXoJiF0BPiqGbQ5pGyqz/OBUzG91P0Qu+pkrM5kn4vyam3RzoGx7IaYfdK1QE8ZmwDc9PDkpcC4+hwJF+Vbmp4yLosirb+aq7Uuj4AK4LcFiRMheZUTjwRbiAPa2CzgouYlReyqhfFKHgKLDPalmiOHAgZ8lqSNQnmE4So/rgE7gSkW1S1VdInoh6oi9EcDP0P0N0qBaDGsjHi6KrGnhXTDN2S8QU58NVpr34MWxNWYGH8K9NF0N8j354D+2lnjjnx/VsJpHLBF9OrF47+lv1Kht13yMjWMtEhYlegdRf+elOngPjIAeCn6zy0LQQY4DwxLg0iF5YLVhsQt1ELOVRqBOUlIdJY4t12wKoLMYOCJJ4mMyJcknlnisWC1FmYKQ+UCL5OCHPMlctFzQbUn9ZU5HkpBOCkJvFh2caW3X/OgqmbF0o/tjSj3ah5nDDHcMZlELTpdjsBBTBId1fJEoThkTnXr6IzdKYRCs/RfKtF1dJPxdwYbgtdNb/A4f2dLZRqi2pmDwEQ5mM20vKBIjIUpkogT1W/lFOdyTOCjkPC6eLNFkeX5wVXUzeMZYLm0LDnHthSN/wGcBpZadL0laZIokAYuifHKm5eBdRGlNy/vF+d6Gt+kGR932Mrb+8VaRwKq090qm5cPdBKZtMgUxlzT6HJbTnpWZ+gY+L5fNKLc4skPJ11EeWSN74Tt5BiqT6h23X2yG+cSpYEc8SahMENr9LLGJ3rB4ohSCadEJBTmifF5vZppjf+n0oY28A/hDwK/Ec3nMwbFAAAAAElFTkSuQmCC" alt="confetti">
+                    </div>
+                    <h2 class="title">Cumpleaños</h2>
+                    <p class="subtitle">Infantil & Adulto</p>
+                </button>
+
+                <button class="category-card">
+                    <div class="icon-container">
+                      <!-- Icono de anillo en SVG -->
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADVElEQVR4nO2aSWsUURSFPzHRBAfEQHDlACJqEBziEF0oKLhw3qgL/4CCgpL8AREUzEITIxgha0FwQhEDQgyIiqiIEt2oBDQaE5U4oImJT66chrKt7q7XneE1eODQUHVvvXOrXt373q2G/FEJbAD2ASeBC0A70AH0AB+Br4ATv+jYe9m0y+cEsBdYr2uOOCYAW4Fm4FlE4HCzAzgDbNGYw4bZQJPuphtlfgAagZmFBDBFAQyMQQAujf3AKWCybxArgJcBBODS+AKoThrEGqAvANEuAy2BrMsVxCzNSxc4PwFzsgVyMwCRLiFbMwWxMgBxzpPL4wKpD0CY8+SxuEAeByDMefJhXCC9AQhznuyOC6Q/AGHOk9/jAukKQJjz5Ou4QK4HIMx50jT/g906eZfwcVdad8WdLIuscBcRLqoi1b08k1GTjI4TLuql0VbDGVEto3dAaQGDjdc+IpoJ+3XMzuWLUmlzSVbBqcK4Lc/BJgLns7ygV7JNiRzYrms8IQEOyfgS/pimvXiubHMHqMjj+pflfzCJcaV2hT+BGZ4D3fNInWbrgxnSNODTpLiowepGMBDfNF8nP9OWGNvk9DyPqXVrhKZWh3ytk5NXdqjxHNDqUVuWINpk44OaQrJpKl9bH8snY1mzbjBLIINqypltUjTL1zR5Y4ucezyCaJXPD6BBu85J4qq02nLDI5he+Zgm7wzRKeeWhD4Nsn8DLM5it0Q2Tk8vCVpk3+mTScsji7LbCeezrc2GdLdNaC4sk61Ns4UJ7MukJZXtchbUccA5ObzyyNeN8rHfpDjt+VQqpclJo2nNiMMy7NMq0zc12nuQFKvl89TDpyrSPDStsdgJ/NLj3owfvuviPr3ZqfL55jnWRlV407on7u6kxOwnfByIrKjXRj8bdOvEWYoHp6TZUvNcO/BIB2z5XkLxoCSy5fjT34pW3QdArVqR0wkPFfrkUSutUe3D3tkYKzLWAv4HQlogQwGIKJSDRPYdxcwuC+R+AEIK5T0L5GgAQgrlkWhTrpi5NFVorgYgJl/+1X9boD+9uCLjZ2BeevnfUWSpeChbW3dT4P96cOIX3fissGl2LQCxLgPtfZ7vs9K0FbB9x7Y681Y7stEWbWPa2KbBykTGTwm/AWQ0n/6u/5VuAAAAAElFTkSuQmCC" alt="engagement-ring">
+                    </div>
+                    <h2 class="title">Bodas</h2>
+                    <p class="subtitle">& Aniversarios</p>
+                </button>
+
+                <button class="category-card">
+                    <div class="icon-container">
+                      <!-- Icono de Baby Shower en SVG -->
+                   <img src="data:image/png;base64,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" alt="external-baby-shower-babies-and-maternity-flaticons-lineal-color-flat-icons">
+                    </div>
+                    <h2 class="title">Baby Shower</h2>
+                    <p class="subtitle">Relevación de Sexo</p>
+                </button>
+
+                <button class="category-card">
+                    <div class="icon-container">
+                      <!-- Icono de Automovil en SVG -->
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACiUlEQVR4nO2YT4hNURzHP0yGeSUhCw8lbBgzNRvyZ23lz05TimZjYUpYeLY2M6WJFJtRGmoWFmKBWRAWklIiLIXyQmJKI/8dnfre6XS8eXPfvHPvfeV86re4557z/f1+797zO7/7IBKJRCKR4mgDtgJHgHPAGPAceAV8AsYBIxvX2EvgKXAdGAYOAZuklTurgdPAOyfQZu0tcBbozCOBucBJ4JcTwAvgPHAA2A50AauAhbKE5Nre69bcfmBETynR+6Mn1ZFVErOAq3L2E7gIbA6ov1FP5Lt83AFmkwF75cC+5xvIji7go3z1ZuHggcT7yJ5++bobWrjbqTwlsmcB8EU+14YUPiNRW6nyYkQ+T4QS7NC+sKLryY8t8vlB1bJp+iR4j/x5Jt+7Q4jdl9g+8uewfN9sZNEu/eoTwBWNdTolN49N7rMI+Ar8BlZq7LZitLHu8Bf06kRNTleblGVI1/bwK4oxxXBc13u8LsB2CJM8cm6+B+bIkl7qFMUxrBhe66R3i4+1h+7kpGYb9VKWnc7YhLrUNcC8HIKfD6wD9gOfnTi2eceBUez/nNpGhx/aJ6bF7JJi63HGbOyT2I102akOS4AfLRC48ewbsFgx3lLMSRGoW/Za0Q428o4+aYGAzRT2uJFE/MXXgGU15pWBivMNMROza49Ky2c5cKPGmtT4C61gPSpNJGLX1mNFyESWTjO/3EQi5Rlop8ZfeGGafzmySqRNXUWwRIx6G1u/a3Esg1erRz5N6ESMmrdRfbOXAm72irRK0h6VL5NVIq1iqSk6UBMT8Sg6UBMT8QguWJTfagqxNxkkUg3tdzCF4EAGiQyG9tsu0eoUv8iA5oSmvSC/kUgkEvnP+QvMFND9WjuxTQAAAABJRU5ErkJggg==" alt="car">
+                    </div>
+                    <h2 class="title">Infantiles</h2>
+                    <p class="subtitle">Personaje 3D</p>
+                  </button>
+
+                  <button class="category-card">
+                    <div class="icon-container">
+                      <!-- Icono de contral en SVG -->
+                     <img src="data:image/png;base64,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" alt="external-game-pad-hotel-and-services-gradient-design-circle">
+                    </div>
+                    <h2 class="title">Geek & Pop</h2>
+                    <p class="subtitle">Anime Cine & Gaming</p>
+                  </button>
+                  
+                  <button class="category-card">
+                    <div class="icon-container">
+                      <!-- Icono de corporativo en SVG -->
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACgklEQVR4nO2aTUgVURTHfxplUSDUpqCkwESQiMBsUVIIBQkiuAk3EYFUi6ACFxJEuJCiKII+KKWNiItcKAoFrRLBsJ2lRIuCiKxoVZRaysSNMzA8eOPcO2/enCfzh7t4jzkfv5k5c8+9M5Apk9EeoBuYkdEt/5WE6oCrwCzg5RnvgTvAIUowebVQdTGS99KGSiJ5r9hQz4qQvJdnPC0kiJfyKJgyEDIQigYyt4LNVoeEvAwkorYAtUAL0AvMlypIrnYAg5QAyCbgHDAGfAAWgS/AE6AhcFwV8BBY1ljszcDnEKcm6U45475OJAxjraPAn4jO/0o/tEZs72sBKQdeOwS5EuIzlRppdDxbP4ANmkA6Y1z6Rk0gd2OAtGkCuRcD5KT4OK+h2G/GCHRMfFzWANIRI9Bu8dGnAeSIY5DvQJmmGrnmCPIT2KgJ5MVqefw+iAFyWBPIXumfbCE+AhXi46WGYje6ZBlgAdj/3xL2JQTh4aC1wFeLACNitx6Y1gRidMEiQBPhSqVGgu38cAQIs/5AM4h/i4VBvBNg9SBGz/M4NSvI20STChCjeuAx8ElWjz2ygxLUZuAi8FZbsR8AbgE1IcfsBG7kzOhl8nsAWEoLpAJoz2lTTDKjsqvi67g8coMT5wRwWraQfNXK1lHRQLYD14FvIU4MULWMpRXW7o/kzZavNmkqEwNZJ6+L5yM66pIR5dhl2VatlFgHgd9JgFQC4xZOzG20S4p8wcJuVq640dkkQEYsnfhtiFG/pe0rufrl8tGAC8Rkvp1EW0enAvatDvZnSED9DokEP7vY5mA/lQTItEMiftH6c8UvS/tFub0KqqECFNqcpf0b6d0yrTr9A95isD5xAtg8AAAAAElFTkSuQmCC" alt="permanent-job">
+                    </div>
+                    <h2 class="title">Corporativo</h2>
+                    <p class="subtitle">Logos & Lanzamientos</p>
+                  </button>
             </div>
         </section>
 
         <!-- 4. SECCIÓN: PASOS / PROCESO DE COMPRA -->
         <section id="proceso" class="steps-section">
-            <h2>¿Cómo pedir tu torta personalizada?</h2>
+            <header>
+                <p> <strong> PROCESO ARTESANAL SIN COMPLICACIONES </strong></p>
+                <h2>¿Cómo pedir tu torta personalizada?</h2>
+                <p> Desde el primer dia hasta el momento de apagar las velas, te acompañamos con asesoria </p>
+                <p> directa con nuestro chef pastelero.</p>
+            </header>
+            
             <div class="steps-container">
                 <article class="step-card">
                     <span>01</span>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADOklEQVR4nO2aa2iPURzHP5uaFEVeULSUFLmWW6Z4IRQR2zKXRmnkmjtJinKZMpkyhVoZWmokYi8mSSJ3eeES3iK0Yl5YZjp1njqd9tv/+T/nv3YezqfOm2//5/T9fZ/Oec7lD4FAIBAIBAJdQ09gBJCf4NlCYAApoRBoAm4BQ7VWADwD2oEG47dFwAOt9Rb6Wwq0Aa1AOSngqC5UtVqtTTG0P0B/rd839Aqhv3PGb34DE/GcK4bhG1qbaWiqDdH6O0M7LPR30Xr2KZCHx9w2zF7V2hyriGhovDa0mpgBqFaCxzwxjEbjfZ5VwHCtvzS0C1kE8AiP+WAYrddasVXASK1HE6Nq17MIQLXxeMo3w2Sd1hZZ5sdq/aGh3c0ygNN4SmsHX4Elwtu7Z2gvsgzgRyefzm6jQHhLyy19stbvGJr6ImQTgGoL8Yy+lsGTWl9p6VO13mRoHxMEcBbPGGQZrNb6akufrvVGQ/ueIIDPCZfWXcYwy2CV1tda+gytX7NWedkG0O7bynCcZS5a3Gy3dLUuQO8XTL1XggC24RFFlrm3QBnw3NJv6k1Os6VHe4RsAriER0zIYDZT65MggPd4xECH4puFTU6mANqEodNtvEoYwGWhv0wBqDYGj1icoPhfnczmcQKIJlVv2KQ/a3GK/wnM76SvOAGswkMmAY8zGG80zgZcAtiLp+TptUBHpjfH7CNOAEfwmBLB9OgcBhAtub2kWDA9KocBnMJjygTTatmcqwAq8ZhljpuYOAGsw2NWCKbVviEXAbQAg/GYCsH4tBwE8BWYheesEcxHZwJJA3jj+5uP2CgUMBu3ADaQErYKBcx1DEC6S/SOXUIBCxwDUEMrFewRCij9X4bAPqEAdVniEsAWUsIBoYByxwB2kBIqhQLUZYlLALtJCVVCAeqyxCUAb88AbKqFAtbjFsB+UkKNUIA6NnMJ4CAp4YxQgLotcgnA61Mgk1rHSUwK4Bgp4bzjJCYFcIKUUO84iUkBSP8q844GoYBDjgGouSUV1DkOAWkSPU5KKBcKUBcncSh13E53O/l6NdhiHGPFXQNE7AS+6Oc/pWknaNID6Icb3v0tLhAIBAKBAP8EfwH6H7HZhRQ6rgAAAABJRU5ErkJggg==" alt="cutlery">
                     <h3>Elige sabor y porciones</h3>
-                    <p>Texto descriptivo del paso 1...</p>
+                    <p>Define la cantidad de invitados</p>
+                    <p>(de 10 a 150+ porciones), el</p>
+                    <p>número de pisos y tu</p>
+                    <p>combinación de bizcocho y</p>
+                    <p>rellenos favoritos</p>
+                    <footer> <small>✓Opciones tradicionales</small>  </footer>
+
                 </article>
-                <article class="step-card">
-                    <span>02</span>
-                    <h3>Envía tu diseño o idea</h3>
-                    <p>Texto descriptivo del paso 2...</p>
+                    <article class="step-card">
+                        <span>02</span>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAnUlEQVR4nO2UQQrDIBAAh54aeuwH+ox8INBn9Zhbn5APlDwjp7zCnPuDwhaCBdFYRC1JqAMeVpedRVyhsCWuwARI4lK6loPKUFwMicPnMBXx1SmCfQnOQA+ccghqK66AQed2gQ15BQ3wAlodH4CH9eajBRfgaezfgPvCUH1r0Cs4AmPg1EYJYpDVBSrySiQwf/5i1S8FqUjugvyH4A3eTJtxSzLNgQAAAABJRU5ErkJggg==" alt="add-image">
+                        <h3>Envía tu diseño o foto</h3>
+                        <p>Sube fotos de Pinterest,</p>
+                        <p>Instagram o bocetos propios,</p>
+                        <p>Cuéntanos colores, temática o</p>
+                        <p>detalles especiales que</p>
+                        <p>quieras incorporar.</p>
+                        <footer> <small>✓Aceptamos cualquier formato</small>  </footer>
+                    </article>
                 </article>
                 <article class="step-card">
                     <span>03</span>
-                    <h3>Cotiza y reserva</h3>
-                    <p>Texto descriptivo del paso 3...</p>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACiklEQVR4nO2YPWhVMRTHf6I8RRexihRsHawOfr86aKm6Ojnr1EXb0fq5VgSlOpSCToKDH5tQUAQ/KvgBIjpURxVBBH1VN62Lr9pGgqcQLjf33rwX824hfzhwSXLO+Z/k5CS5EBERERHxDx3AKeA58BEYBRZTcqwABoCnwAygEnKGEmIpcBC4DdRTSJvyFVhECbAQ2A1cBqZySKuE7GsV6QVAD3AJ+JZB8AVwBLhj6b8WmvhG4CzwIYP0G2AI6DL0VgGPU8ZOSdoFqSCvM0h/BkaAHTm21gKdwFtD98D/IL0c6JOl/2Mh/R24DuxvYDMOGXZu+SK9RMjczKggvySoviaXfh0wKza1rzYfFeSHhbSu4c+AwWYcpeCl4aOfBirIxZwKoh0cBdoT+iuBc8AjYAK4AlQtvtqAMcl5PQEmBg1fT4qS13X3fQbpd8BpYL1Ff5MlaL1PTqaMHzXGzEoVm8NqY3/NSLGIiAiBTmC8wGUrhNSBB675/7AExFVCdBCFUYaZVykHZGHY7jKhULNwKIw05WHC4bzPAGpisOKgv1dy9qfIfWCPg35FfNZ8BOCKAcv7VrcdbsCeChnANmA6YyPqvi2tDqAbOG65nN0w9CbkxdUl31lPxO4Mm14D0I5+G7O5PdFv5uxOo73HaP/kaFP5DOBEok/Pmu38MB8zy4z2uqNN5TOAqpHj05LzthXYVXAFqjk2ve8BvcTHUhwl98AreTNskO+59quONlXIKrQ1pwrp9NnsaFOFPgf6LeeAflkdasCeasVJrH8C3JOfAFruAr0O+hXgAjDp8y6kg5iXdyEl8oVwmGw2gHn/HhgvAWGVEH2jLYwOuQ6XYSXqQn6NSwARERERBMFfcW9Hsw6yIEkAAAAASUVORK5CYII=" alt="banknotes">
+                    <h3>Cotización y reserva</h3>
+                    <p>Te enviamos el presupuesto</p>
+                    <p>detallado al instante. Asegura</p>
+                    <p>tu fecha con una señal del 50%</p>
+                    <p>mediante pagos digitales o</p>
+                    <p>tranferencia.</p>
+                    <footer> <small>✓Confirmación por Whatsapp</small>  </footer>
                 </article>
                 <article class="step-card">
                     <span>04</span>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADLklEQVR4nO2ZTUhVQRTHf4ipJPrEoKIiQQJdtAhaFGRR0Cpahbho61tERQSFtAijMloUtAnaVBBti3BTCBEh9EUfLqzUamP2QQR9PB8V9HHjPM6T4Xrv3I834ivuHwYed87Mub+ZM+fOzINMmTJlypQpU6Z/SouAPDAIjANF4CvwFLgK7AQaqWItBPqBAuBFFLE5ANRSZVoJjBgvOgT0Ah06+o36O691ZbsnwDKqCOKdvtgY0OWrfwDc8z3rUltp8wpoowrCaURf6BaQC7Apj75fOW3jxSyfgXPq07n6jZkIgrCBiFqMmYlbTs1Fdipo5/5wiguCtk0C8tw1SK+xsKkABF8CiCqyHp1qUDsWoEpB8vMJMqEdS1oNU53xAvI7TB0pQLYBUxa798AFYEUUSHl9NFls+oyOD1rsmlKA2CA8o3wENtlAvkWALPZlpD7HIEkSRBFYF+Z80hJaAjGq9eMKUe84tLyEZVIz7Sxdsyz2h1o3qlDMwWL3UpTrQI3f+W5L+pUtyaOYEGnTr//5TctWZznwQe0OBX2VizE+iFHamHBUw0DaIvxsBX4DP4EN/srD2smYgiVVi64hFyBxdERtX/vXS73RUdim0QaRZNPoAqTGCOPL/kqzs6BtfFg4JZ0JFyCiJfoN/ONPyUHOhjQTdRoHq86Ag9V8gIgGtM1FDFXyUi5B2omvDuNQV3UgwwlgarTNr2oE8VKWDMTLQMhAvAyE/xBkCujWU6CUHcCLOQCZBvbp0aFBj7e3XYEIROvs71Hp2RuHID+ANQF+amPAzMj2QjITYepJCfIsAOSkxc8q3SDaBqWkYxanthuWXEqQ49r+rfFsM3a9jHP9KtN3NGRmmh2CyFH1jHGJsR34onVbEoLITJyOuBAp6a42kIUdpm61uUN6ndU+Tlhs2jW0piMuCQO1Rx1MhFzBtBqjtIv0Wq99FIDVAfUSLTfU5nwaB3X6b5SnIdejYdasM1GGkJuWBVSmS9qXXITs1xNgg66bYeO2MfU/Y0sNmKDyWG0qlcT5FYsfGci1LpzsBe7riEmROy+5E0scrxGS9SjH6E/Ad03TkoSCvmMz+guLRfASNVeb9wAAAABJRU5ErkJggg==" alt="deliver-food">
                     <h3>Entrega o retiro</h3>
-                    <p>Texto descriptivo del paso 4...</p>
+                    <p>Elaboramos tu torta horas</p>
+                    <p>antes del evento. Recíbela</p>
+                    <p>em transporte refrigeradoen tu</p>
+                    <p> domicilio o retira en nuestro </p>
+                    <p>atelier.</p>
+                    <footer> <small>✓Empaque de alta protección</small>  </footer>
                 </article>
             </div>
         </section>
