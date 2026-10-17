@@ -11,8 +11,10 @@ API para ventas de tortas y pedidos
 ⚠️ **En Desarrollo**: El proyecto se encuentra actualmente en fase de construcción.
 
 ### Próximas tareas (To-Do):
-- [] Configurar repositorio Git y estructura inicial.
-- [] Diseñar las tablas en la base de datos SQL.
+- [/] Diseño del index principal y otros rediccionamientos
+- [ ] Aplicar estilos 
+- [/] Configurar repositorio Git y estructura inicial.
+- [ ] Diseñar las tablas en la base de datos SQL.
 - [ ] Desarrollar los endpoints de la API (Backend).
 - [ ] Construir la interfaz de usuario en React (Frontend, HTML, CSS).
 - [ ] Conectar el Frontend con la API.
