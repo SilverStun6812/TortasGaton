@@ -12,6 +12,7 @@ API para ventas de tortas y pedidos
 
 ### Próximas tareas (To-Do):
 - [/] Diseño del index principal y otros rediccionamientos
+        [] Inicio
         [] Redireccionamiento 1 (Catálogo)
         [] Redireccionamiento 2 (Personaliza tu torta)
         [] Redireccionamiento 3 (Como Funciona)
@@ -19,6 +20,13 @@ API para ventas de tortas y pedidos
         [] Redireccionamiento 5 (Contacto)
         [] Redireccionamiento 6 (Cotizar tu torta)
 - [ ] Aplicar estilos 
+        [] Inicio
+        [] Sección 1 (Catálogo)
+        [] Sección 2 (Personaliza tu torta)
+        [] Sección 3 (Como Funciona)
+        [] Sección 4 (Galería de Clientes)
+        [] Sección 5 (Contacto)
+        [] Sección 6 (Cotizar tu torta)
 - [/] Configurar repositorio Git y estructura inicial.
 - [ ] Diseñar las tablas en la base de datos SQL.
 - [ ] Desarrollar los endpoints de la API (Backend).
