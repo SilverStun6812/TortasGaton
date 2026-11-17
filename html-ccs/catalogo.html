@@ -4,17 +4,16 @@
     <title>Tortas Gaton</title>
     <link rel="icon" type="image/png" href="../src/assets/images/Logo Gaton V2.png">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
     <meta name= "theme-color" content="#09f">
     <meta name="description" content="La Torta que quieras te la tengo y si no te la fabrico 😋">
-    <!-- Inicio OPEN GRAPH -->
-
-
-    <!-- Fin OPEN GRAPH -->
+   
     <!-- Inicio iconos del footer -->
-    <<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <!-- Fin iconos del footer -->
+	<!-- Para Archivo tu archivo CSS -->
+    <!-- <link rel="stylesheet" href="../src/assets/css/styles.css"> -->
 </head>
 
 <body>
@@ -22,7 +21,7 @@
 		<header>
 			<nav class="navbar">
 				<!-- Logo con imagen y texto-->
-				<a href="#" class="logo">
+				<a href="index.html" class="logo">
             		<img src="../src/assets/images/Logo Gaton V1.png" alt="TortasGaton Logo" width="25">
             		<span>TortasGaton</span>
         		</a>
@@ -70,15 +69,105 @@
         		</div>
 			</nav>	
 		</header>
-</body>
+		<!-- 2. Sección: Encabezado y filtros de Catálogo-->
+		 <main class="catalog-main">
+			<section class="catalog-hero-section">
+				<div class="catalog-intro">
+					<!-- Etiqueta superior -->
+					 <div class="catalog-badge">
+						<span>✨ ATELIER DE CREACIONES EXCLUSIVAS</span>
+					 </div>
+					<!-- Título y descripción-->
+					<h1>Galería de Inspiración & Diseños</h1>
+					<p>Obras maestras de autor listas para celebrar tus fechas memorables. Elige un modelo como inspiración directa o personaliza cada piso con nuestros maestros pasteleros. </p>
+				</div>
+				<!-- Estadísticas del catálogo (a la derecha) -->
+				<div class="catalog-stats">
+					<div class="stat-box">
+						<strong>+120</strong>
+                    	<span>Diseños Activos</span>
+					</div>
+					<div class="stat-box">
+						<strong>4.95 ⭐</strong>
+                    	<span>Satisfacción</span>
+					</div>
+					<div class="stat-box">
+						<strong>100%</strong>
+                    	<span>Artesanal</span>
+					</div>
+				</div>
+			</section>
+
+			<!--Sección de Filtros de Especialidad-->
+			<section class="filters-container">
+				<div class="filters-header">
+					<h3>
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<line x1="4" y1="21" x2="4" y2="14"></line>
+							<line x1="4" y1="10" x2="4" y2="3"></line>
+							<line x1="12" y1="21" x2="12" y2="12"></line>
+							<line x1="12" y1="8" x2="12" y2="3"></line>
+							<line x1="20" y1="21" x2="20" y2="16"></line>
+							<line x1="20" y1="12" x2="20" y2="3"></line>
+							<line x1="1" y1="14" x2="7" y2="14"></line>
+							<line x1="9" y1="8" x2="15" y2="8"></line>
+							<line x1="17" y1="16" x2="23" y2="16"></line>
+						</svg>
+						Filtros de Especialidad
+					</h3>
+					<button class="btn-clear-filters"> Limpiar selección</button>
+				</div>
+
+				<!-- Selectores Desplegables-->
+				 <div class="filters-dropdowns">
+					<div class="filter-group">
+						<label>Ocasión</label>
+						<select aria-label="Ocasión">
+							<option> Todas las Ocasiones</option>
+						</select>
+					</div>
+					<div class="filter-group">
+						<label>Técnica de Cobertura</label>
+						<select aria-label="Técnica de Cobertura">
+							<option>Cualquier Cobertura</option>
+						</select>
+					</div>
+					<div class="filter-group">
+						<label>Rango de Porciones</label>
+						<select aria-label="Rango de Porciones">
+							<option>Todos los Tamaños</option>
+						</select>
+					</div>
+					<div class="filter-group">
+						<label>Estilo Estético</label>
+						<select aria-label="Estilo Estético">
+							<option>Todos los Estilos</option>
+						</select>
+					</div>
+				 </div>
+
+				 <!-- Etiquetas de Filtros Especiales / Rápidos-->
+				 <div class="filter-tags-row">
+					<span class="tags-label"> Especiales:</span>
+					<div class="tags-list">
+						<button class="filter-tag active">Todos</button>
+                    	<button class="filter-tag">🔥 Tendencia 2026</button>
+                    	<button class="filter-tag">💍 Nupcial</button>
+                    	<button class="filter-tag">🌿 Sin Azúcar Añadida</button>
+                    	<button class="filter-tag">👑 Estilo Lambeth</button>
+					</div>
+				 </div>
+			</section>
+		 </main>
+		 
 
 
 
-<footer>
+	<footer>
 	
 
 
-</footer>
-
+	</footer>
+</body>
 </html>
 
