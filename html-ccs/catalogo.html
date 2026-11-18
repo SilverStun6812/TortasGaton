@@ -6,168 +6,477 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <meta name= "theme-color" content="#09f">
+    <meta name="theme-color" content="#09f">
     <meta name="description" content="La Torta que quieras te la tengo y si no te la fabrico 😋">
    
     <!-- Inicio iconos del footer -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <!-- Fin iconos del footer -->
-	<!-- Para Archivo tu archivo CSS -->
+    <!-- Para Archivo tu archivo CSS -->
     <!-- <link rel="stylesheet" href="../src/assets/css/styles.css"> -->
 </head>
 
 <body>
-	<!-- 1. BARRA DE NAVEGACIÓN CATÁLOGO-->
-		<header>
-			<nav class="navbar">
-				<!-- Logo con imagen y texto-->
-				<a href="index.html" class="logo">
-            		<img src="../src/assets/images/Logo Gaton V1.png" alt="TortasGaton Logo" width="25">
-            		<span>TortasGaton</span>
-        		</a>
+    <!-- 1. BARRA DE NAVEGACIÓN CATÁLOGO-->
+    <header>
+        <nav class="navbar">
+            <!-- Logo con imagen y texto-->
+            <a href="index.html" class="logo">
+                <img src="../src/assets/images/Logo Gaton V1.png" alt="TortasGaton Logo" width="25">
+                <span>TortasGaton</span>
+            </a>
 
-        		<!-- Botón/Campo de búsqueda -->
-        		<div class="nav-search">
-        			<form action="/buscar" method="GET">
-        				<input type="search" name="q" placeholder="Buscar..." aria-label="Buscar">
-        				<button type="submit" aria-label="Buscar">
-        					<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        		<circle cx="11" cy="11" r="8"></circle>
-                        		<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    		</svg>	
-        				</button>
-        			</form>	
-        		</div>
+            <!-- Botón/Campo de búsqueda -->
+            <div class="nav-search">
+                <form action="/buscar" method="GET">
+                    <input type="search" name="q" placeholder="Buscar..." aria-label="Buscar">
+                    <button type="submit" aria-label="Buscar">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>    
+                    </button>
+                </form>    
+            </div>
 
-				 <!-- Enlaces de navegación -->
-        		<ul class="nav-links">
-            		<li><a href="index.html">Inicio</a></li>
-            		<li><a href="catalogo.html">Catálogo</a></li>
-            		<li><a href="personaliza.html" class="btn-highlight">Personaliza tu Torta</a></li>
-            		<li><a href="funciona.html">Cómo Funciona</a></li>
-            		<li><a href="clientes.html">Galería de Clientes</a></li>
-            		<li><a href="contacto.html">Contacto</a></li>
-        		</ul>
+             <!-- Enlaces de navegación -->
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="personaliza.html" class="btn-highlight">Personaliza tu Torta</a></li>
+                <li><a href="funciona.html">Cómo Funciona</a></li>
+                <li><a href="clientes.html">Galería de Clientes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
 
-        		<!-- Acciones a la derecha -->
-        		<div class="nav-actions">
-        			<a href="cotizar.html" class="btn-primary">Cotizar Torta</a>
-        			<a href="#carrito" class="btn-icon cart-btn" aria-label="Carrito">
-                		<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    		<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-                    		<line x1="3" y1="6" x2="21" y2="6"></line>
-                    		<path d="M16 10a4 4 0 0 1-8 0"></path>
-                		</svg>
-                		<span class="badge">0</span>
-            		</a>
-            		<a href="#cuenta" class="btn-icon account-btn" aria-label="Cuenta">
-                		<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    		<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                    		<circle cx="12" cy="7" r="4"></circle>
-                		</svg>
-            		</a>
-        		</div>
-			</nav>	
-		</header>
-		<!-- 2. Sección: Encabezado y filtros de Catálogo-->
-		 <main class="catalog-main">
-			<section class="catalog-hero-section">
-				<div class="catalog-intro">
-					<!-- Etiqueta superior -->
-					 <div class="catalog-badge">
-						<span>✨ ATELIER DE CREACIONES EXCLUSIVAS</span>
-					 </div>
-					<!-- Título y descripción-->
-					<h1>Galería de Inspiración & Diseños</h1>
-					<p>Obras maestras de autor listas para celebrar tus fechas memorables. Elige un modelo como inspiración directa o personaliza cada piso con nuestros maestros pasteleros. </p>
-				</div>
-				<!-- Estadísticas del catálogo (a la derecha) -->
-				<div class="catalog-stats">
-					<div class="stat-box">
-						<strong>+120</strong>
-                    	<span>Diseños Activos</span>
-					</div>
-					<div class="stat-box">
-						<strong>4.95 ⭐</strong>
-                    	<span>Satisfacción</span>
-					</div>
-					<div class="stat-box">
-						<strong>100%</strong>
-                    	<span>Artesanal</span>
-					</div>
-				</div>
-			</section>
+            <!-- Acciones a la derecha -->
+            <div class="nav-actions">
+                <a href="cotizar.html" class="btn-primary">Cotizar Torta</a>
+                <a href="#carrito" class="btn-icon cart-btn" aria-label="Carrito">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="badge">0</span>
+                </a>
+                <a href="#cuenta" class="btn-icon account-btn" aria-label="Cuenta">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a>
+            </div>
+        </nav>    
+    </header>
 
-			<!--Sección de Filtros de Especialidad-->
-			<section class="filters-container">
-				<div class="filters-header">
-					<h3>
-						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-							<line x1="4" y1="21" x2="4" y2="14"></line>
-							<line x1="4" y1="10" x2="4" y2="3"></line>
-							<line x1="12" y1="21" x2="12" y2="12"></line>
-							<line x1="12" y1="8" x2="12" y2="3"></line>
-							<line x1="20" y1="21" x2="20" y2="16"></line>
-							<line x1="20" y1="12" x2="20" y2="3"></line>
-							<line x1="1" y1="14" x2="7" y2="14"></line>
-							<line x1="9" y1="8" x2="15" y2="8"></line>
-							<line x1="17" y1="16" x2="23" y2="16"></line>
-						</svg>
-						Filtros de Especialidad
-					</h3>
-					<button class="btn-clear-filters"> Limpiar selección</button>
-				</div>
+    <!-- 2. Sección: Encabezado y filtros de Catálogo-->
+    <main class="catalog-main">
+        <section class="catalog-hero-section">
+            <div class="catalog-intro">
+                <!-- Etiqueta superior -->
+                <div class="catalog-badge">
+                    <span>✨ ATELIER DE CREACIONES EXCLUSIVAS</span>
+                </div>
+                <!-- Título y descripción-->
+                <h1>Galería de Inspiración & Diseños</h1>
+                <p>Obras maestras de autor listas para celebrar tus fechas memorables. Elige un modelo como inspiración directa o personaliza cada piso con nuestros maestros pasteleros. </p>
+            </div>
+            <!-- Estadísticas del catálogo (a la derecha) -->
+            <div class="catalog-stats">
+                <div class="stat-box">
+                    <strong>+120</strong>
+                    <span>Diseños Activos</span>
+                </div>
+                <div class="stat-box">
+                    <strong>4.95 ⭐</strong>
+                    <span>Satisfacción</span>
+                </div>
+                <div class="stat-box">
+                    <strong>100%</strong>
+                    <span>Artesanal</span>
+                </div>
+            </div>
+        </section>
 
-				<!-- Selectores Desplegables-->
-				 <div class="filters-dropdowns">
-					<div class="filter-group">
-						<label>Ocasión</label>
-						<select aria-label="Ocasión">
-							<option> Todas las Ocasiones</option>
-						</select>
-					</div>
-					<div class="filter-group">
-						<label>Técnica de Cobertura</label>
-						<select aria-label="Técnica de Cobertura">
-							<option>Cualquier Cobertura</option>
-						</select>
-					</div>
-					<div class="filter-group">
-						<label>Rango de Porciones</label>
-						<select aria-label="Rango de Porciones">
-							<option>Todos los Tamaños</option>
-						</select>
-					</div>
-					<div class="filter-group">
-						<label>Estilo Estético</label>
-						<select aria-label="Estilo Estético">
-							<option>Todos los Estilos</option>
-						</select>
-					</div>
-				 </div>
+        <!-- Sección de Filtros de Especialidad -->
+        <section class="filters-container">
+            <div class="filters-header">
+                <h3>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="4" y1="21" x2="4" y2="14"></line>
+                        <line x1="4" y1="10" x2="4" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12" y2="3"></line>
+                        <line x1="20" y1="21" x2="20" y2="16"></line>
+                        <line x1="20" y1="12" x2="20" y2="3"></line>
+                        <line x1="1" y1="14" x2="7" y2="14"></line>
+                        <line x1="9" y1="8" x2="15" y2="8"></line>
+                        <line x1="17" y1="16" x2="23" y2="16"></line>
+                    </svg>
+                    Filtros de Especialidad
+                </h3>
+                <button class="btn-clear-filters"> Limpiar selección</button>
+            </div>
 
-				 <!-- Etiquetas de Filtros Especiales / Rápidos-->
-				 <div class="filter-tags-row">
-					<span class="tags-label"> Especiales:</span>
-					<div class="tags-list">
-						<button class="filter-tag active">Todos</button>
-                    	<button class="filter-tag">🔥 Tendencia 2026</button>
-                    	<button class="filter-tag">💍 Nupcial</button>
-                    	<button class="filter-tag">🌿 Sin Azúcar Añadida</button>
-                    	<button class="filter-tag">👑 Estilo Lambeth</button>
-					</div>
-				 </div>
-			</section>
-		 </main>
-		 
+            <!-- Selectores Desplegables-->
+            <div class="filters-dropdowns">
+                <div class="filter-group">
+                    <label>Ocasión</label>
+                    <select aria-label="Ocasión">
+                        <option>Todas las Ocasiones</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Técnica de Cobertura</label>
+                    <select aria-label="Técnica de Cobertura">
+                        <option>Cualquier Cobertura</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Rango de Porciones</label>
+                    <select aria-label="Rango de Porciones">
+                        <option>Todos los Tamaños</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Estilo Estético</label>
+                    <select aria-label="Estilo Estético">
+                        <option>Todos los Estilos</option>
+                    </select>
+                </div>
+            </div>
 
+            <!-- Etiquetas de Filtros Especiales / Rápidos-->
+            <div class="filter-tags-row">
+                <span class="tags-label"> Especiales:</span>
+                <div class="tags-list">
+                    <button class="filter-tag active">Todos</button>
+                    <button class="filter-tag">🔥 Tendencia 2026</button>
+                    <button class="filter-tag">💍 Nupcial</button>
+                    <button class="filter-tag">🌿 Sin Azúcar Añadida</button>
+                    <button class="filter-tag">👑 Estilo Lambeth</button>
+                </div>
+            </div>
+        </section>
 
+        <!-- 3. Sección: Cuadrícula de productos del catálogo -->
+        <section class="catalog-products-section">
+            <!-- Encabezado de la colección -->
+            <div class="collection-header">
+                <span class="collection-title">Explorando Colección</span>
+                <span class="collection-count">6 Creaciones</span>
+                <span class="collection-note">Pastelería 100% Fresca por Pedido</span>
+            </div>
 
-	<footer>
-	
+            <!-- Cuadrícula de Tarjetas -->
+            <div class="products-grid">
+                <!-- Tarjeta 1: Jardín Encantado -->
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <img src="../src/assets/images/Torta jardin.jpeg" alt="Torta jardin" width="25">
+                        <div class="card-badges-top">
+                            <span class="badge-tag trend">Tendencia 2026</span>
+                            <span class="badge-tag info">Sin Azúcar disponible</span>    
+                        </div>
+                        <button class="btn-favorite" aria-label="Guardar en favoritos">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <span class="rating-tag">⭐ 5.0 (38)</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">BOHEMIO FLORAL</span>
+                        <h3>Jardín Encantado de Rosas y Macarons</h3>
+                        <p>Tres pisos de bizcocho esponjoso embebido en almíbar de vainilla bourbon, relleno con...</p>
+                        
+                        <div class="product-meta-row">
+                            <span class="portions">👥 35 - 40 porciones</span>
+                            <div class="price-box">
+                                <span class="price-label">Referencia desde</span>
+                                <span class="price-amount">$145.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-actions">
+                        <button class="btn-secondary-action">Ver Detalles</button>
+                        <button class="btn-primary-action">Pedir Este Diseño</button>
+                    </div>    
+                </article>
 
+                <!-- Tarjeta 2: Clásico Victoriano (Lambeth) -->
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <img src="../src/assets/images/Torta Lambeth.jpeg" alt="Torta Lambeth" width="25">
+                        <div class="card-badges-top">
+                            <span class="badge-tag trend">Diseño Exclusivo</span>
+                            <span class="badge-tag info">Estilo Lambeth</span>    
+                        </div>
+                        <button class="btn-favorite" aria-label="Guardar en favoritos">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <span class="rating-tag">⭐ 4.9 (52)</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">CLÁSICO VICTORIANO</span>
+                        <h3>Vintage Lambeth Cake Pastel Halloween</h3>
+                        <p>Torta Lambeth Edición Halloween</p>
+                        
+                        <div class="product-meta-row">
+                            <span class="portions">👥 18 - 22 porciones</span>
+                            <div class="price-box">
+                                <span class="price-label">Referencia desde</span>
+                                <span class="price-amount">$98.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-actions">
+                        <button class="btn-secondary-action">Ver Detalles</button>
+                        <button class="btn-primary-action">Pedir Este Diseño</button>
+                    </div>    
+                </article>
 
-	</footer>
+                <!-- Tarjeta 3: Minimalismo Escultórico (Magnolia) -->
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <img src="../src/assets/images/Torta Magnolia.webp" alt="Torta Magnolia" width="25">
+                        <div class="card-badges-top">
+                            <span class="badge-tag trend">Otro Estilo</span>
+                            <span class="badge-tag info">Gustazo Exótico</span>    
+                        </div>
+                        <button class="btn-favorite" aria-label="Guardar en favoritos">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <span class="rating-tag">⭐ 5.0 (64)</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">MINIMALISMO FRUTAL</span>
+                        <h3>Magnolia & Efecto Frutal</h3>
+                        <p>Minimalismo con toques frutales</p>
+                        
+                        <div class="product-meta-row">
+                            <span class="portions">👥 6 - 10 porciones</span>
+                            <div class="price-box">
+                                <span class="price-label">Referencia desde</span>
+                                <span class="price-amount">$50.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-actions">
+                        <button class="btn-secondary-action">Ver Detalles</button>
+                        <button class="btn-primary-action">Pedir Este Diseño</button>
+                    </div>    
+                </article>
+
+                <!-- Tarjeta 4: Opcion celíaca -->
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <img src="../src/assets/images/tarta-de-chocolate-y-avellanas.webp" alt="Torta Semi-Naked" width="25">
+                        <div class="card-badges-top">
+                            <span class="badge-tag trend">Opción Celíacos</span>
+                            <span class="badge-tag info">Semi naked- Rústico</span>    
+                        </div>
+                        <button class="btn-favorite" aria-label="Guardar en favoritos">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <span class="rating-tag">⭐ 4.8 (29)</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">RÚSTICO CONTEMPORÁNEO</span>
+                        <h3>Semi-Naked de Avellana & Higos Silvestres</h3>
+                        <p>Bizcocho húmedo de cacao con capas a la vista, praliné de avellanas tostadas del sur,...</p>
+                        
+                        <div class="product-meta-row">
+                            <span class="portions">👥 10 - 12 porciones</span>
+                            <div class="price-box">
+                                <span class="price-label">Referencia desde</span>
+                                <span class="price-amount">$50.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-actions">
+                        <button class="btn-secondary-action">Ver Detalles</button>
+                        <button class="btn-primary-action">Pedir Este Diseño</button>
+                    </div>    
+                </article>
+
+                <!-- Tarjeta 5: Comic 2D torta -->
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <img src="../src/assets/images/Torta 2D.jpg" alt="Torta 2D" width="25">
+                        <div class="card-badges-top">
+                            <span class="badge-tag trend">Viral Social</span>
+                            <span class="badge-tag info">Ilusión Óptica 2D</span>    
+                        </div>
+                        <button class="btn-favorite" aria-label="Guardar en favoritos">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <span class="rating-tag">⭐ 4.8 (29)</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">COMIC / CARTOON POP</span>
+                        <h3>Comic Illusion Pastel Pop</h3>
+                        <p>Efecto gráfico tridimensional que parece salir de una tira cómica. contornos definidos...</p>
+                        
+                        <div class="product-meta-row">
+                            <span class="portions">👥 10 - 14 porciones</span>
+                            <div class="price-box">
+                                <span class="price-label">Referencia desde</span>
+                                <span class="price-amount">$75.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-actions">
+                        <button class="btn-secondary-action">Ver Detalles</button>
+                        <button class="btn-primary-action">Pedir Este Diseño</button>
+                    </div>    
+                </article>
+
+                <!-- Tarjeta 6: 15 años & gala -->
+                <article class="product-card">
+                    <div class="product-image-container">
+                        <img src="../src/assets/images/Torta corona cristal.webp" alt="Torta 2D" width="25">
+                        <div class="card-badges-top">
+                            <span class="badge-tag trend">15 Años & Gala</span>
+                            <span class="badge-tag info">Cristales de Isomalt</span>    
+                        </div>
+                        <button class="btn-favorite" aria-label="Guardar en favoritos">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <span class="rating-tag">⭐ 5.0 (31)</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">LUJO NUPCIAL / QUINCEAÑERA</span>
+                        <h3>Corona de Cristal & Rosa Champán</h3>
+                        <p>Cobertura estructurada en ganache de chocolate blanco tintada con tonos suaves</p>
+                        
+                        <div class="product-meta-row">
+                            <span class="portions">👥 15 - 20 porciones</span>
+                            <div class="price-box">
+                                <span class="price-label">Referencia desde</span>
+                                <span class="price-amount">$150.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-actions">
+                        <button class="btn-secondary-action">Ver Detalles</button>
+                        <button class="btn-primary-action">Pedir Este Diseño</button>
+                    </div>    
+                </article>
+            </div>
+        </section>
+
+        <!-- 4. SECCIÓN CTA: CREAMOS TU TORTA SOÑADA -->
+        <section class="custom-cake-cta">
+            <div class="cta-banner-content">
+                <div class="cta-top-tag">
+                    <span>💡 ¿Tienes un boceto o tablero de Pinterest?</span>
+                </div>
+            
+                <h2>Creamos tu Torta Soñada desde Cero</h2>
+                <p>Nuestros maestros pasteleros trabajan a partir de fotografías de referencia, combinaciones de paletas de color y requisitos dietéticos específicos.</p>
+            
+                <div class="cta-features-list">
+                    <span>✓ Degustación previa en pedidos de boda</span>
+                    <span>✓ Refrigeración garantizada</span>
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="personaliza.html" class="btn-configurator">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 20h9"></path>
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                        </svg>
+                        Configurador Online
+                    </a>
+                    <a href="contacto.html" class="btn-upload-photo">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                            <polyline points="21 15 16 10 5 21"></polyline>
+                        </svg>
+                        Subir mi Foto
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 5. FOOTER PRINCIPAL -->
+    <footer>
+        <div class="footer-container">
+            <!-- Columna 1: Marca y Redes -->
+            <div class="footer-brand">
+                <h3 class="brand-title">
+                    <img src="../src/assets/images/Logo Gaton V2.png" alt="TortasGatonV2 Logo" width="25" class="footer-logo"> 
+                    TortasGaton
+                </h3>
+                <p>Alta pastelería artesanal y diseño de tortas personalizadas para bodas, celebraciones y momentos inolvidables.</p>
+                
+                <div class="footer-socials">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Instagram">
+                        <i class="fa-brands fa-square-instagram" aria-hidden="true"></i>   
+                    </a>
+                    <a href="https://wa.me" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Chat de WhatsApp">
+                        <i class="fa-brands fa-square-whatsapp" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:tu-correo@ejemplo.com" class="btn" aria-label="Correo Electrónico">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Columna 2: Políticas de Anticipación -->
+            <div class="footer-links">
+                <h4>Políticas de Anticipación</h4>
+                <p>Para garantizar la frescura y el detalle artesanal:</p>
+                <ul>
+                    <li><strong>Tortas clásicas y de catálogo:</strong> Mínimo <strong>48 horas</strong> de antelación.</li>
+                    <li><strong>Tortas temáticas y pisos múltiples:</strong> De <strong>4 a 7 días</strong> previos.</li>
+                    <li><strong>Diseños de bodas y grandes eventos:</strong> Se sugiere reservar con <strong>2 a 4 semanas</strong>.</li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Entregas y Cobertura -->
+            <div class="footer-info">
+                <h4>Entregas y Cobertura</h4>
+                <p>Envíos en vehículos climatizados especializados en pastelería delicada o retiro directo en nuestro atelier.</p>
+                <p><strong>Zonas de despacho:</strong> Cobertura urbana y alrededores.</p>
+                <p>Franjas horarias puntuales coordinadas previamente. Embalajes reforzados de grado alimentario.</p>
+            </div>
+
+            <!-- Columna 4: Garantía y Calidad -->
+            <div class="footer-warranty">
+                <h4>Garantía y Calidad</h4>
+                <p>Ingredientes de origen certificado, chocolate belga, mantequilla pura y frutas de estación.</p>
+                <div class="footer-badges">
+                    <span class="badge-tag">Higiene Certificada</span>
+                    <span class="badge-tag">Bespoke Pastry</span>
+                    <span class="badge-tag">Opciones Sin TACC</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Barra Inferior (Copyright y Enlaces Secundarios) -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 TortasGaton Atelier. Todos los derechos reservados.</p>
+            <ul class="footer-legal">
+                <li><a href="#faq">Preguntas Frecuentes</a></li>
+                <li><a href="#terminos">Términos de Servicio</a></li>
+                <li><a href="#privacidad">Privacidad</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
-
