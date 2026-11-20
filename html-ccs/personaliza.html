@@ -18,6 +18,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
     <!-- 1. PERSONALIZA -->
     <header>
         <nav class="navbar">
@@ -26,6 +27,16 @@
                 <img src="../src/assets/images/Logo Gaton V1.png" alt="TortasGaton Logo" width="25">
                 <span>TortasGaton</span>
             </a>
+=======
+	<!-- 1.PERZONALIZA->
+		<header>
+			<nav class="navbar">
+				<!-- Logo con imagen y texto-->
+				<a href="index.html" class="logo">
+            		<img src="../src/assets/images/Logo Gaton V1.png" alt="TortasGaton Logo" width="25">
+            		<span>TortasGaton</span>
+        		</a>
+>>>>>>> 87f13f8 (Actualizacion)
 
             <!-- Botón/Campo de búsqueda -->
             <div class="nav-search">
@@ -50,6 +61,7 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
 
+<<<<<<< HEAD
             <!-- Acciones a la derecha -->
             <div class="nav-actions">
                 <a href="cotizar.html" class="btn-primary">Cotizar Torta</a>
@@ -594,4 +606,386 @@
         </div>
     </footer>
 </body>
+=======
+        		<!-- Acciones a la derecha -->
+        		<div class="nav-actions">
+        			<a href="cotizar.html" class="btn-primary">Cotizar Torta</a>
+        			<a href="#carrito" class="btn-icon cart-btn" aria-label="Carrito">
+                		<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    		<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    		<line x1="3" y1="6" x2="21" y2="6"></line>
+                    		<path d="M16 10a4 4 0 0 1-8 0"></path>
+                		</svg>
+                		<span class="badge">0</span>
+            		</a>
+            		<a href="#cuenta" class="btn-icon account-btn" aria-label="Cuenta">
+                		<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    		<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    		<circle cx="12" cy="7" r="4"></circle>
+                		</svg>
+            		</a>
+        		</div>
+			</nav>	
+		</header>
+		<!-- 2. CONTENIDO PRINCIPAL: PERSONALIZA TU TORTA -->
+		<main class="customizer-main">
+			<!-- Encabezado de la pantalla de personalización -->
+			 <section class="customizer-header">
+				<div class="customizer-intro">
+					<div class="customizer-breadcrumb">
+						<span class="badge-atelier"> 🎂 Atelier de Creación Personalizada</span>
+						<span class="breadcrumb-divider">/</span>
+						<span class="breadcrumb-current">Cotizador &amp; Pedido Especial</span>
+					</div>
+					<h1>Diseña tu Torta de Ensueño</h1>
+					<p>Configura el formato, los sabores artesanales y comparte tu idea visual. Calculamos una estimación transparente en tiempo real antes de hornear tu obra de arte.</p>
+				</div>
+				
+				<!-- Insignias de confianza a la derecha -->
+				<div class="customizer-trust-badges">
+					<div class="trust-pill">
+						<i class="fa-regular fa-clock" aria-hidden="true"></i>
+						<span>Respuesta en &lt; 2 hra hábiles</span>
+					</div>
+					<div class="trust-pill">
+						<i class="fa-solid fa-certificate" aria-hidden="true"></i>
+						<span>100% Sin Compromiso</span>
+					</div>
+				</div>
+				
+			 </section>
+			 <!-- CONTENEDOR PRINCIPAL DEL CONFIGURADOR (2 COLUMNAS) -->
+			 <div class="customizer-layout">
+				<!-- COLUMNA IZQUIERDA: PASOS DE CONFIGURACIÓN -->
+				<div class="customizer-steps">
+					<!-- PASO 1: OCASIÓN, FECHA & ESTILO DE ARTE -->
+					<section class="step-card" aria-labelledby="step-1-tittle">
+						<div class="step-header">
+							<div class="step-tittle-group">
+								<span class="step-number">1</span>
+								<div>
+									<h2 id="step-1-title">Ocasión, Fecha &amp; Estilo de Arte</h2>
+                                	<p>Los detalles clave para asegurar cupo en nuestro obrador</p>
+								</div>
+							</div>
+							<span class="badge-required">Obligatorio</span>
+						</div>
+						<!-- Campos de motivo y fecha -->
+						<div class="step-form-row">
+							<div class="form-field">
+								<label for="motivo-evento">Motivo del Evento</label>
+								<select id="motivo-evento" name="motivo_evento">
+									<option value="cumpleanos-aniversario" selected>Cumpleaños / Aniversario Personal</option>
+                                	<option value="boda">Boda</option>
+                                	<option value="quinceanos">15 Años / Gala</option>
+                                	<option value="infantil">Infantil / Temático</option>
+                                	<option value="corporativo">Evento Corporativo</option>
+								</select>
+							</div>
+							<div class="form-field">
+								<label for="fecha-evento">Fecha del Evento (Mín. 3 días)</label>
+                            	<input type="date" id="fecha-evento" name="fecha_evento" value="2026-11-22">
+							</div>
+						</div>
+						<!-- Estética decorativa deseada -->
+						<div class="substep-block">
+							<h3>Estética Decorativa Deseada</h3>
+							<div class="options-grid-3">
+								<button type="button" class="option-tile active" data-style="vintage-lambeth">
+									<i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+                                	<strong>Vintage Lambeth</strong>
+                                	<span>Ribetes clásicos &amp; bento</span>
+								</button>
+
+								<button type="button" class="option-tile" data-style="flores-naturales">
+									<i class="fa-solid fa-seedling" aria-hidden="true"></i>
+									<strong>Flores Naturales</strong>
+									<span>Botánica comestible + oro</span>
+								</button>
+
+								<button type="button" class="option-tile" data-style="gatitos-3d">
+									<i class="fa-solid fa-paw" aria-hidden="true"></i>
+									<strong>Gatitos 3D Fondant</strong>
+									<span>Esculturas azucaradas</span>
+								</button>
+
+								<button type="button" class="option-tile" data-style="minimalista-velvet">
+									<i class="fa-solid fa-palette" aria-hidden="true"></i>
+									<strong>Minimalista Velvet</strong>
+									<span>Líneas limpias, monocromo</span>
+								</button>
+
+								<button type="button" class="option-tile" data-style="drip-ganache">
+									<i class="fa-solid fa-droplet" aria-hidden="true"></i>
+									<strong>Drip Ganache</strong>
+									<span>Chorreado chocolate belga</span>
+								</button>
+
+								<button type="button" class="option-tile" data-style="textura-espatulada">
+									<i class="fa-solid fa-paintbrush" aria-hidden="true"></i>
+									<strong>Textura Espatulada</strong>
+									<span>Efecto óleo impresionista</span>
+								</button>
+							</div>
+						</div>
+					</section>
+					<!-- PASO 2: PORCIONES, ESTRUCTURA & PISOS -->
+					<section class="step-card" aria-labelledby="step-2-title">
+						<div class="step-header">
+							<div class="step-title-group">
+								<span class="step-number">2</span>
+								<div>
+									<h2 id="step-2-title">Porciones, Estructura &amp; Pisos</h2>
+									<p>Calcula el rendimiento perfecto para tus invitados</p>
+								</div>
+							</div>
+						</div>
+						<!-- Cantidad de invitados -->
+						<div class="substep-block">
+							<h3>Cantidad de Invitados</h3>
+							<div class="portions-grid">
+								<button type="button" class="portion-card active" data-portions="10-15" data-base="28000">
+									<strong>10 – 15</strong>
+									<span>Comensales</span>
+									<small>Base: $28.000</small>
+								</button>
+
+								<button type="button" class="portion-card" data-portions="20-30" data-base="42000">
+									<strong>20 – 30</strong>
+									<span>Comensales</span>
+									<small>Base: $42.000</small>
+								</button>
+
+								<button type="button" class="portion-card" data-portions="40-55" data-base="68000">
+									<strong>40 – 55</strong>
+									<span>Comensales</span>
+									<small>Base: $68.000</small>
+								</button>
+
+								<button type="button" class="portion-card" data-portions="60-80" data-base="96000">
+									<strong>60 – 80+</strong>
+									<span>Banquetes</span>
+									<small>Base: $96.000</small>
+								</button>
+							</div>
+						</div>
+
+						<!-- Altura / Pisos y Geometría -->
+						<div class="step-form-row">
+							<div class="substep-block">
+								<h3>Altura / Pisos Estructurales</h3>
+									<div class="tiers-grid">
+										<button type="button" class="mini-option active" data-tiers="1">
+											<strong>1 Piso</strong>
+											<span>Clásico</span>
+										</button>
+
+										<button type="button" class="mini-option" data-tiers="2">
+											<strong>2 Pisos</strong>
+											<span>+$8.500</span>
+										</button>
+										
+										<button type="button" class="mini-option" data-tiers="3">
+											<strong>3 Pisos</strong>
+											<span>+$16.000</span>
+										</button>	
+									</div>
+							</div>
+							<div class="substep-block">
+								<h3>Geometría de la Base</h3>
+								<div class="shape-grid">
+									<button type="button" class="mini-option active" data-shape="redonda">
+										<i class="fa-regular fa-circle" aria-hidden="true"></i>
+										<span>Redonda</span>
+									</button>
+
+									<button type="button" class="mini-option" data-shape="corazon">
+										<i class="fa-regular fa-heart" aria-hidden="true"></i>
+										<span>Corazón</span>
+									</button>
+
+									<button type="button" class="mini-option" data-shape="cuadrada">
+										<i class="fa-regular fa-square" aria-hidden="true"></i>
+										<span>Cuadrada</span>
+									</button>
+								</div>
+							</div>
+						</div> 
+					</section>
+					<!-- PASO 3: BIZCOCHUELO & RELLENOS GOURMET -->
+
+				</div>
+				<!-- COLUMNA DERECHA: RESUMEN EN VIVO Y COTIZACIÓN -->	
+				 <aside class="customizer-summary" aria-label="Resumen de tu torta en preparación">
+					<div class="summary-card">
+						<div class="summary-header">
+							<div class="summary-status">
+								<span class="status-dot" aria-hidden="true"></span>
+                            	<h2>Tu Torta en Preparación</h2>
+							</div>
+							<span class="badge-live">Estimación en Vivo</span>
+						</div>
+						<!-- Vista previa de imagen con etiquetas -->
+						<div class="summary-preview">
+							<img src="../src/assets/images/torta-vintage-lambeth.jpg" alt="Vista previa de torta Vintage Lambeth">
+                        	<span class="preview-tag style-tag">Vintage Lambeth</span>
+                        	<span class="preview-tag pax-tag">10–15 pax</span>
+						</div>
+
+						<!-- Lista de especificaciones seleccionadas -->
+						<dl class="summary-specs">
+							<div class="spec-row">
+								<dt><i class="fa-regular fa-calendar" aria-hidden="true"></i> Fecha requerida:</dt>
+                            	<dd>22/11/2026</dd>
+							</div>
+
+							<div class="spec-row">
+								<dt><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Estructura y Pisos:</dt>
+								<dd>1 Piso (Redonda)</dd>
+							</div>
+
+							<div class="spec-row">
+								<dt><i class="fa-solid fa-cake-candles" aria-hidden="true"></i> Masa:</dt>
+								<dd>Vainilla Bourbon</dd>
+							</div>
+
+							<div class="spec-row">
+								<dt><i class="fa-solid fa-droplet" aria-hidden="true"></i> Relleno principal:</dt>
+								<dd>Dulce de Leche Colonial</dd>
+							</div>
+
+							<div class="spec-row">
+								<dt><i class="fa-solid fa-truck" aria-hidden="true"></i> Entrega:</dt>
+								<dd>Retiro en Atelier ($0)</dd>
+							</div>
+						</dl>
+
+						<!-- Presupuesto estimado -->
+						 <div class="estimate-box">
+							<span class="estimate-label">Presupuesto Estimado</span>
+                            <div class="estimate-price-group">
+                                <strong class="estimate-price">$ 28.000</strong>
+                                <small>ARS + IVA incluido</small>
+                            </div>
+						 </div>
+						 <p class="estimate-note">*El valor definitivo puede ajustarse sutilmente según la complejidad del boceto adjunto tras la revisión por nuestra maestra pastelera.</p>						
+					</div>
+
+					<!-- Botones de acción -->
+					<div class="summary-actions">
+						<button type="submit" class="btn-submit-quote">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                            Enviar Solicitud de Cotización
+                        </button>
+
+						<a href="contacto.html" class="btn-consult-decorator">
+                            <i class="fa-regular fa-message" aria-hidden="true"></i>
+                            Consultar en Directo con la Decoradora
+                        </a>
+					</div>
+
+					<!-- Garantías rápidas -->
+					<div class="summary-guarantees">
+						<div class="guarantee-item">
+                            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                            <strong>Garantía Frescura</strong>
+                            <span>Horneada el mismo día</span>
+                        </div>
+
+						<div class="guarantee-item">
+                            <i class="fa-regular fa-face-smile" aria-hidden="true"></i>
+                            <strong>+800 Clientes Felices</strong>
+                            <span>Calificación 4.9/5</span>
+                        </div>
+
+						<div class="guarantee-item">
+                            <i class="fa-regular fa-snowflake" aria-hidden="true"></i>
+                            <strong>Cadena de Frío</strong>
+                            <span>Transporte regulado</span>
+                        </div>
+					</div>
+
+					<!-- Tarjeta de testimonio al pie de la columna derecha -->
+					<article class="summary-testimonial">
+						<img src="../src/assets/images/cliente-mariana.jpg" alt="Mariana P." class="testimonial-avatar">
+						<div class="testimonial-body">
+							<div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+							<blockquote>"La torta con gatitos fondant para el cumple de Sofía superó cualquier expectativa. El bizcocho de vainilla y dulce de leche estaba súper esponjoso."</blockquote>
+							<cite>— Mariana P. (Evento Cumpleaños)</cite>
+						</div>
+					</article>
+				 </aside>
+			 </div>
+
+		</main>
+<footer>
+
+	<div class="footer-container">
+		<!-- Columna 1: Marca y Redes -->
+		<div class="footer-brand">
+			<h3 class="brand-title">
+				<img src="../src/assets/images/Logo Gaton V2.png" alt="TortasGatonV2 Logo" width="25" class="footer-logo"> 
+				TortasGaton
+			</h3>
+			<p>Alta pastelería artesanal y diseño de tortas personalizadas para bodas, celebraciones y momentos inolvidables.</p>
+			
+			<div class="footer-socials">
+				<a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Instagram">
+					<i class="fa-brands fa-square-instagram" aria-hidden="true"></i>   
+				</a>
+				<a href="https://wa.me" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Chat de WhatsApp">
+					<i class="fa-brands fa-square-whatsapp" aria-hidden="true"></i>
+				</a>
+				<a href="mailto:tu-correo@ejemplo.com" class="btn" aria-label="Correo Electrónico">
+					<i class="fa-solid fa-envelope" aria-hidden="true"></i>
+				</a>
+			</div>
+		</div>
+
+		<!-- Columna 2: Políticas de Anticipación -->
+		<div class="footer-links">
+			<h4>Políticas de Anticipación</h4>
+			<p>Para garantizar la frescura y el detalle artesanal:</p>
+			<ul>
+				<li><strong>Tortas clásicas y de catálogo:</strong> Mínimo <strong>48 horas</strong> de antelación.</li>
+				<li><strong>Tortas temáticas y pisos múltiples:</strong> De <strong>4 a 7 días</strong> previos.</li>
+				<li><strong>Diseños de bodas y grandes eventos:</strong> Se sugiere reservar con <strong>2 a 4 semanas</strong>.</li>
+			</ul>
+		</div>
+
+		<!-- Columna 3: Entregas y Cobertura -->
+		<div class="footer-info">
+			<h4>Entregas y Cobertura</h4>
+			<p>Envíos en vehículos climatizados especializados en pastelería delicada o retiro directo en nuestro atelier.</p>
+			<p><strong>Zonas de despacho:</strong> Cobertura urbana y alrededores.</p>
+			<p>Franjas horarias puntuales coordinadas previamente. Embalajes reforzados de grado alimentario.</p>
+		</div>
+
+		<!-- Columna 4: Garantía y Calidad -->
+		<div class="footer-warranty">
+			<h4>Garantía y Calidad</h4>
+			<p>Ingredientes de origen certificado, chocolate belga, mantequilla pura y frutas de estación.</p>
+			<div class="footer-badges">
+				<span class="badge-tag">Higiene Certificada</span>
+				<span class="badge-tag">Bespoke Pastry</span>
+				<span class="badge-tag">Opciones Sin TACC</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- Barra Inferior (Copyright y Enlaces Secundarios) -->
+	<div class="footer-bottom">
+		<p>&copy; 2025 TortasGaton Atelier. Todos los derechos reservados.</p>
+		<ul class="footer-legal">
+			<li><a href="#faq">Preguntas Frecuentes</a></li>
+			<li><a href="#terminos">Términos de Servicio</a></li>
+			<li><a href="#privacidad">Privacidad</a></li>
+		</ul>
+	</div>	
+</footer>
+
+</body>
+
+
+>>>>>>> 87f13f8 (Actualizacion)
 </html>
