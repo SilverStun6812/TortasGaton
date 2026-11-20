@@ -15,7 +15,7 @@ API para ventas de tortas y pedidos
         [/] Inicio
         [/] Redireccionamiento 1 (Catálogo)
         [/] Redireccionamiento 2 (Personaliza tu torta)
-        [] Redireccionamiento 3 (Como Funciona)
+        [/] Redireccionamiento 3 (Como Funciona)
         [] Redireccionamiento 4 (Galería de Clientes)
         [] Redireccionamiento 5 (Contacto)
         [] Redireccionamiento 6 (Cotizar tu torta)
