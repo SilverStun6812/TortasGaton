@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Tortas Gaton</title>
+    <title>Galeria de Clientes - Tortas Gaton</title>
     <link rel="icon" type="image/png" href="../src/assets/images/Logo Gaton V2.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <meta name="robots" content="index, follow">
     <meta name= "theme-color" content="#09f">
     <meta name="description" content="La Torta que quieras te la tengo y si no te la fabrico 😋">
-    <!-- Inicio OPEN GRAPH -->
-
-
-    <!-- Fin OPEN GRAPH -->
+    
     <!-- Inicio iconos del footer -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <!-- Fin iconos del footer -->
 </head>
 
 <body>
-	<!-- 1. BARRA DE NAVEGACIÓN CATÁLOGO-->
+	<!-- 1. Galeria de clientes-->
 		<header>
 			<nav class="navbar">
 				<!-- Logo con imagen y texto-->
@@ -70,14 +67,223 @@
         		</div>
 			</nav>	
 		</header>
+		<!-- Contenido Principal: Galería de Clientes-->
+		<main class="gallery-main">
+			<!-- Encabezado principal -->
+			<section class="gallery-hero" aria-labelledby="gallery-hero-title">
+				<div class="gallery-badge">
+					<i class="fa-solid fa-cake-candles" aria-hidden="true"></i>
+                	<span>COMUNIDAD &amp; CELEBRACIONES REALES</span>
+				</div>
+
+				<h1 id="gallery-hero-title">Momentos Inolvidables, <em>Tortas Inolvidables</em></h1>
+            	<p>Descubre las fotografías que nuestros anfitriones y parejas compartieron desde sus mesas de celebración. Desde capturas de pantalla de Pinterest hasta esculturas dulces en el centro de sus fechas más memorables.</p>
+
+				<div class="gallery-hero-actions">
+					<a href="personaliza.html" class="btn-primary">
+						<i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+						<span>Cotiza tu Idea</span>
+					</a>
+					<a href="#subir-foto" class="btn-secondary">
+						<i class="fa-regular fa-image" aria-hidden="true"></i>
+						<span>Sube tu Foto de Celebración</span>
+					</a>
+				</div>
+			</section>
+
+			<!-- Barra de métricas de comunidad -->
+			<section class="gallery-stats" aria-label="Estadísticas de eventos y calidad">
+				<div class="stat-card">
+					<strong>+850</strong>
+					<span>EVENTOS CELEBRADOS</span>
+				</div>
+				<div class="stat-card">
+					<strong>4.9 <i class="fa-solid fa-star" aria-hidden="true"></i></strong>
+					<span>CALIFICACIÓN PROMEDIO</span>
+				</div>
+				<div class="stat-card">
+					<strong>100%</strong>
+					<span>FIDELIDAD DE DISEÑO</span>
+				</div>
+				<div class="stat-card">
+					<strong>0 <span>incidentes</span></strong>
+					<span>TRANSPORTE CLIMATIZADO</span>
+				</div>
+			</section>
+
+			<!-- Filtros por categoría de evento -->
+			<nav class="gallery-filters" aria-label="Filtrar galería por tipo de evento">
+				<ul class="filter-tabs-list">
+					<li><button type="button" class="filter-tab active" data-filter="todos">Todos los Eventos</button></li>
+					<li><button type="button" class="filter-tab" data-filter="bodas-aniversarios">Bodas &amp; Aniversarios</button></li>
+					<li><button type="button" class="filter-tab" data-filter="cumpleanos-infantiles">Cumpleaños Infantiles</button></li>
+					<li><button type="button" class="filter-tab" data-filter="tematicas-pop">Fiestas Temáticas / Pop</button></li>
+					<li><button type="button" class="filter-tab" data-filter="baby-shower">Baby Shower &amp; Revelación</button></li>
+					<li><button type="button" class="filter-tab" data-filter="graduaciones-corporativos">Graduaciones &amp; Corporativos</button></li>
+				</ul>
+			</nav>
+
+			<!-- SECCIÓN: DEL BOCETO A LA REALIDAD EN LA MESA -->
+			<section class="fidelity-showcase-section" aria-labelledby="fidelity-section-title">
+				<div class="fidelity-section-header">
+					<div class="fidelity-heading-left">
+						<span class="section-eyebrow">PROMESA DE PRECISIÓN</span>
+						<h2 id="fidelity-section-title">Del Boceto a la <em>Realidad en la Mesa</em></h2>
+					</div>
+					<p class="fidelity-heading-right">El miedo número 1 al encargar una torta es que luzca distinta al diseño soñado. Aquí documentamos el archivo original enviado por el anfitrión junto a la pieza final montada.</p>
+				</div>
+
+				<!--Caso 01-->
+				<article class="case-study-card" aria-labelledby="case-01-title">
+					<header class="case-study-header">
+						<div class="case-study-title-group">
+							<span class="case-number-badge">01</span>
+							<div>
+								<h3 id="case-01-title">Boda de Sofía &amp; Mateo</h3>
+								<p class="case-meta">Hacienda Las Lilas · 140 invitados · Estilo Lambeth Perlas &amp; Violetas</p>
+							</div>
+						</div>
+	
+						<div class="case-badges">
+							<span class="badge-fidelity">Fidelidad Estética 100%</span>
+							<span class="badge-tiers">3 Pisos Estructurales</span>
+						</div>
+					</header>
+					<div class="case-comparison-grid">
+						<!-- Columna izquierda: Referencia del cliente -->
+						<div class="comparison-column">
+							<div class="comparison-top-bar">
+								<span class="comparison-tag reference-tag">
+									<i class="fa-solid fa-paperclip" aria-hidden="true"></i>
+									Referencia de Pinterest + Notas de la Novia
+								</span>
+								<span class="comparison-date">Recibido: 12 Mayo</span>
+							</div>
+
+							<figure class="comparison-media">
+								<img src="../src/assets/images/caso-01-referencia.jpg" alt="Moodboard y boceto de referencia enviado por la novia para la boda">
+								<figcaption class="media-quote-overlay">"Queremos el ribeteado recargado victoriano con perlas"</figcaption>
+							</figure>
+
+							<div class="comparison-notes-box">
+								<h4>Puntos clave solicitados:</h4>
+								<p>Tres niveles firmes capaces de resistir 4 horas de recepción exterior a 24°C sin colapsar, crema ligera de violetas y bizcocho húmedo de almendras tostadas con frambuesa silvestre.</p>
+							</div>
+						</div>
+						<!-- Columna derecha: Resultado real en el evento -->
+						<div class="comparison-column">
+							<div class="comparison-top-bar">
+								<span class="comparison-tag final-tag">
+									<i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+									Creación TortasGaton en el Salón
+								</span>
+								<span class="comparison-date">Entregado: 28 Junio · 17:30 hs</span>
+							</div>
+
+							<figure class="comparison-media">
+								<img src="../src/assets/images/caso-01-realidad.jpg" alt="Torta de boda de tres pisos terminada en la recepción">
+								<span class="photo-corner-pill">
+									<i class="fa-solid fa-camera" aria-hidden="true"></i>
+									Foto Real del Fotógrafo de Boda
+								</span>
+							</figure>
+
+							<div class="comparison-testimonial-box">
+								<blockquote>"Lloré cuando la vi entrar al salón. Era exactamente lo que teníamos en el tablero de Pinterest pero con un sabor a frambuesas silvestres que nuestros invitados aún recuerdan."</blockquote>
+
+								<div class="testimonial-footer-row">
+									<cite>— Sofía R., Novia</cite>
+									<span class="stars" aria-label="5 de 5 estrellas">★★★★★</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<footer class="case-study-footer">
+						<p class="case-flavor-note">
+							<i class="fa-solid fa-utensils" aria-hidden="true"></i>
+							<span><strong>Sabor:</strong> Almendra tostada, coulis de frambuesa silvestre y ganache de chocolate blanco velvet.</span>
+						</p>
+						<a href="personaliza.html" class="btn-primary">
+							<span>Pedir una Torta Similar</span>
+							<i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+						</a>	
+					</footer>
+				</article>
+			</section>
+
+			
+
+		</main>
+
+		<footer>
+			<div class="footer-container">
+				<!-- Columna 1: Marca y Redes -->
+				<div class="footer-brand">
+					<h3 class="brand-title">
+						<img src="../src/assets/images/Logo Gaton V2.png" alt="TortasGatonV2 Logo" width="25" class="footer-logo"> 
+						TortasGaton
+					</h3>
+					<p>Alta pastelería artesanal y diseño de tortas personalizadas para bodas, celebraciones y momentos inolvidables.</p>
+					
+					<div class="footer-socials">
+						<a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Instagram">
+							<i class="fa-brands fa-square-instagram" aria-hidden="true"></i>   
+						</a>
+						<a href="https://wa.me" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Chat de WhatsApp">
+							<i class="fa-brands fa-square-whatsapp" aria-hidden="true"></i>
+						</a>
+						<a href="mailto:tu-correo@ejemplo.com" class="btn" aria-label="Correo Electrónico">
+							<i class="fa-solid fa-envelope" aria-hidden="true"></i>
+						</a>
+					</div>
+				</div>
+	
+				<!-- Columna 2: Políticas de Anticipación -->
+				<div class="footer-links">
+					<h4>Políticas de Anticipación</h4>
+					<p>Para garantizar la frescura y el detalle artesanal:</p>
+					<ul>
+						<li><strong>Tortas clásicas y de catálogo:</strong> Mínimo <strong>48 horas</strong> de antelación.</li>
+						<li><strong>Tortas temáticas y pisos múltiples:</strong> De <strong>4 a 7 días</strong> previos.</li>
+						<li><strong>Diseños de bodas y grandes eventos:</strong> Se sugiere reservar con <strong>2 a 4 semanas</strong>.</li>
+					</ul>
+				</div>
+	
+				<!-- Columna 3: Entregas y Cobertura -->
+				<div class="footer-info">
+					<h4>Entregas y Cobertura</h4>
+					<p>Envíos en vehículos climatizados especializados en pastelería delicada o retiro directo en nuestro atelier.</p>
+					<p><strong>Zonas de despacho:</strong> Cobertura urbana y alrededores.</p>
+					<p>Franjas horarias puntuales coordinadas previamente. Embalajes reforzados de grado alimentario.</p>
+				</div>
+	
+				<!-- Columna 4: Garantía y Calidad -->
+				<div class="footer-warranty">
+					<h4>Garantía y Calidad</h4>
+					<p>Ingredientes de origen certificado, chocolate belga, mantequilla pura y frutas de estación.</p>
+					<div class="footer-badges">
+						<span class="badge-tag">Higiene Certificada</span>
+						<span class="badge-tag">Bespoke Pastry</span>
+						<span class="badge-tag">Opciones Sin TACC</span>
+					</div>
+				</div>
+			</div>
+	
+			<!-- Barra Inferior (Copyright y Enlaces Secundarios) -->
+			<div class="footer-bottom">
+				<p>&copy; 2025 TortasGaton Atelier. Todos los derechos reservados.</p>
+				<ul class="footer-legal">
+					<li><a href="funciona.html#faq">Preguntas Frecuentes</a></li>
+					<li><a href="#terminos">Términos de Servicio</a></li>
+					<li><a href="#privacidad">Privacidad</a></li>
+				</ul>
+			</div>
+		</footer>
 </body>
 
 
 
-<footer>
-	
 
-
-</footer>
 
 </html>
