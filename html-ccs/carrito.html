@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Tu Carrito - TortasGaton</title>
+    <link rel="icon" type="image/png" href="../src/assets/images/Logo Gaton V2.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#09f">
+    <meta name="description" content="Revisa tu selección de tortas artesanales, configura la entrega climatizada o retiro en atelier y confirma tu reserva en TortasGaton.">
+    
+    <!-- Iconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <!-- Fuentes tipográficas (Editorial Serif + Sans limpia) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Hojas de estilo TortasGaton -->
+    <link rel="stylesheet" href="./variables.css">
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./pages.css">
+</head>
+
+<body>
+    <!-- 1. BARRA DE NAVEGACIÓN -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="../src/assets/images/Logo Gaton V1.png" alt="TortasGaton Logo" width="25">
+                <span>TortasGaton</span>
+            </a>
+    
+            <div class="nav-search">
+                <form action="/buscar" method="GET">
+                    <input type="search" name="q" placeholder="Buscar..." aria-label="Buscar">
+                    <button type="submit" aria-label="Buscar">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+    
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="personaliza.html" class="btn-highlight">Personaliza tu Torta</a></li>
+                <li><a href="funciona.html">Cómo Funciona</a></li>
+                <li><a href="clientes.html">Galería de Clientes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+    
+            <div class="nav-actions">
+                <a href="cotizar.html" class="btn-primary">Cotizar Torta</a>
+                <a href="carrito.html" class="btn-icon cart-btn" aria-label="Carrito">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="badge">0</span>
+                </a>
+                <a href="cuenta.html" class="btn-icon account-btn" aria-label="Cuenta">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 2. CONTENIDO PRINCIPAL: CARRITO DE COMPRAS -->
+    <main class="cart-main" id="carrito">
+        <!-- Encabezado principal -->
+        <section class="cart-hero" aria-labelledby="cart-hero-title">
+            <div class="cart-badge">
+                <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+                <span>PEDIDO ARTESANAL · RESERVA SEGURA</span>
+            </div>
+
+            <h1 id="cart-hero-title">Tu <em>Carrito Dulce</em></h1>
+            <p>Revisa los detalles de tus creaciones seleccionadas, define tu fecha de celebración y elige entre retiro en nuestro atelier o envío en transporte climatizado.</p>
+        </section>
+
+        <!-- Cuerpo del carrito: ítems + resumen -->
+        <section class="cart-workspace-section" aria-label="Detalle del carrito y resumen de reserva">
+            <div class="cart-two-column-grid">
+                <!-- COLUMNA IZQUIERDA: LISTA DE PRODUCTOS -->
+                <div class="cart-items-column">
+                    <header class="cart-list-header">
+                        <h2>Creaciones Seleccionadas</h2>
+                        <a href="catalogo.html" class="text-action-link">
+                            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                            <span>Seguir explorando catálogo</span>
+                        </a>
+                    </header>
+
+                    <!-- Estado vacío (se muestra cuando el carrito tiene 0 productos) -->
+                    <div class="cart-empty-state" id="cart-empty-view">
+                        <i class="fa-solid fa-cake-candles" aria-hidden="true"></i>
+                        <h3>Tu carrito aún está vacío</h3>
+                        <p>Explora nuestras tortas de autor en el catálogo o diseña una pieza exclusiva a medida para tu celebración.</p>
+                        <div class="empty-cart-actions">
+                            <a href="catalogo.html" class="btn-primary">Ver Catálogo</a>
+                            <a href="personaliza.html" class="btn-secondary-dark">Personalizar Torta</a>
+                        </div>
+                    </div>
+
+                    <!-- Lista de ítems activos (ejemplo estructural para poblar con JS) -->
+                    <div class="cart-items-list" id="cart-items-container" hidden>
+                        <article class="cart-item-card">
+                            <div class="cart-item-media">
+                                <img src="../src/assets/images/torta-ejemplo-carrito.jpg" alt="Torta Velvet Frambuesa y Pistacho">
+                            </div>
+
+                            <div class="cart-item-details">
+                                <div class="cart-item-top">
+                                    <div>
+                                        <span class="item-category-tag">Catálogo Atelier</span>
+                                        <h3>Velvet Frambuesa &amp; Pistacho</h3>
+                                    </div>
+                                    <button type="button" class="btn-remove-item" aria-label="Eliminar producto del carrito">
+                                        <i class="fa-regular fa-trash-can" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+
+                                <p class="item-specs">20 porciones · Bizcocho de almendra tostada, coulis de frambuesa silvestre y ganache blanco.</p>
+
+                                <div class="cart-item-controls">
+                                    <div class="quantity-stepper" role="group" aria-label="Cantidad">
+                                        <button type="button" class="qty-btn" aria-label="Disminuir cantidad">-</button>
+                                        <span class="qty-value">1</span>
+                                        <button type="button" class="qty-btn" aria-label="Aumentar cantidad">+</button>
+                                    </div>
+
+                                    <strong class="cart-item-price">$48.000</strong>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Nota adicional para dedicatorias -->
+                    <div class="cart-dedication-box">
+                        <label for="nota-dedicatoria">
+                            <i class="fa-solid fa-pen-nib" aria-hidden="true"></i>
+                            <span>Dedicatoria en tarjeta o aclaraciones para el obrador (Opcional)</span>
+                        </label>
+                        <textarea id="nota-dedicatoria" name="nota_dedicatoria" rows="3" placeholder="Ej. Incluir tarjeta que diga 'Feliz Cumpleaños Sofía' o sin nueces en la decoración..."></textarea>
+                    </div>
+                </div>
+
+                <!-- COLUMNA DERECHA: RESUMEN Y LOGÍSTICA -->
+                <aside class="cart-summary-sidebar" aria-label="Resumen de pago y entrega">
+                    <div class="cart-summary-card">
+                        <h2>Resumen de Reserva</h2>
+
+                        <form class="cart-checkout-form" action="/confirmar-pedido" method="POST">
+                            <div class="form-group">
+                                <label for="cart-fecha-entrega">Fecha de Entrega o Retiro <span aria-hidden="true">*</span></label>
+                                <input type="date" id="cart-fecha-entrega" name="fecha_entrega" required>
+                            </div>
+
+                            <fieldset class="form-fieldset">
+                                <legend>Modalidad de Entrega</legend>
+                                <label class="radio-option-card">
+                                    <input type="radio" name="entrega_carrito" value="retiro-atelier" checked>
+                                    <span>Retiro en Atelier (Sin cargo · Palermo Soho)</span>
+                                </label>
+                                <label class="radio-option-card">
+                                    <input type="radio" name="entrega_carrito" value="flete-climatizado">
+                                    <span>Flete Climatizado 16°C (A coordinar zona)</span>
+                                </label>
+                            </fieldset>
+
+                            <dl class="summary-totals-list">
+                                <div class="summary-row">
+                                    <dt>Subtotal productos</dt>
+                                    <dd id="cart-subtotal">$0</dd>
+                                </div>
+                                <div class="summary-row">
+                                    <dt>Embalaje estructural reforzado</dt>
+                                    <dd>Incluido</dd>
+                                </div>
+                                <div class="summary-row">
+                                    <dt>Logística / Envío</dt>
+                                    <dd id="cart-shipping">$0</dd>
+                                </div>
+                                <div class="summary-row summary-total-final">
+                                    <dt>Total Estimado</dt>
+                                    <dd id="cart-total">$0</dd>
+                                </div>
+                                <div class="summary-row summary-deposit-note">
+                                    <dt>Seña para bloquear fecha (50%)</dt>
+                                    <dd id="cart-deposit">$0</dd>
+                                </div>
+                            </dl>
+
+                            <button type="submit" class="btn-submit-primary">
+                                <i class="fa-solid fa-lock" aria-hidden="true"></i>
+                                <span>Continuar y Reservar Fecha</span>
+                            </button>
+
+                            <p class="form-confirmation-note">
+                                <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                                <span>Verificamos disponibilidad de cupo técnico antes de procesar el pago final.</span>
+                            </p>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <!-- 3. FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3 class="brand-title">
+                    <img src="../src/assets/images/Logo Gaton V2.png" alt="TortasGatonV2 Logo" width="25" class="footer-logo"> 
+                    TortasGaton
+                </h3>
+                <p>Alta pastelería artesanal y diseño de tortas personalizadas para bodas, celebraciones y momentos inolvidables.</p>
+                
+                <div class="footer-socials">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Instagram">
+                        <i class="fa-brands fa-square-instagram" aria-hidden="true"></i>   
+                    </a>
+                    <a href="https://wa.me/5491134567890" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Chat de WhatsApp">
+                        <i class="fa-brands fa-square-whatsapp" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:pedidos@tortasgaton.com" class="btn" aria-label="Correo Electrónico">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="footer-links">
+                <h4>Políticas de Anticipación</h4>
+                <p>Para garantizar la frescura y el detalle artesanal:</p>
+                <ul>
+                    <li><strong>Tortas clásicas y de catálogo:</strong> Mínimo <strong>48 horas</strong> de antelación.</li>
+                    <li><strong>Tortas temáticas y pisos múltiples:</strong> De <strong>4 a 7 días</strong> previos.</li>
+                    <li><strong>Diseños de bodas y grandes eventos:</strong> Se sugiere reservar con <strong>2 a 4 semanas</strong>.</li>
+                </ul>
+            </div>
+    
+            <div class="footer-info">
+                <h4>Entregas y Cobertura</h4>
+                <p>Envíos en vehículos climatizados especializados en pastelería delicada o retiro directo en nuestro atelier.</p>
+                <p><strong>Zonas de despacho:</strong> Cobertura urbana y alrededores.</p>
+                <p>Franjas horarias puntuales coordinadas previamente. Embalajes reforzados de grado alimentario.</p>
+            </div>
+    
+            <div class="footer-warranty">
+                <h4>Garantía y Calidad</h4>
+                <p>Ingredientes de origen certificado, chocolate belga, mantequilla pura y frutas de estación.</p>
+                <div class="footer-badges">
+                    <span class="badge-tag">Higiene Certificada</span>
+                    <span class="badge-tag">Bespoke Pastry</span>
+                    <span class="badge-tag">Opciones Sin TACC</span>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2026 TortasGaton Atelier. Todos los derechos reservados.</p>
+            <ul class="footer-legal">
+                <li><a href="funciona.html#faq">Preguntas Frecuentes</a></li>
+                <li><a href="terminos.html#terminos">Términos de Servicio</a></li>
+                <li><a href="privacidad.html#privacidad">Privacidad</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

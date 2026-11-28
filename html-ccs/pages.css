@@ -1,0 +1,569 @@
+/* ==========================================================================
+   TORTASGATON ATELIER - ESTILOS POR PÁGINA (pages.css)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. CONTACTO: BANNER DE URGENCIAS Y CUPOS DE ÚLTIMA HORA
+   -------------------------------------------------------------------------- */
+   .contact-main,
+   .legal-main,
+   .quote-main,
+   .account-main,
+   .cart-main {
+       max-width: var(--container-max);
+       margin: 0 auto;
+       padding: var(--space-xl) var(--gutter);
+   }
+   
+   .urgent-booking-banner {
+       margin-top: var(--space-xl);
+       padding: var(--space-lg) var(--space-xl);
+       background: linear-gradient(120deg, var(--bg-surface) 0%, var(--bg-elevated) 100%);
+       border: 1px solid var(--border-strong);
+       border-radius: var(--radius-lg);
+       box-shadow: var(--shadow-card);
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       gap: var(--space-lg);
+       flex-wrap: wrap;
+   }
+   
+   .urgent-banner-content {
+       max-width: 720px;
+   }
+   
+   .urgent-status-pill {
+       display: inline-flex;
+       align-items: center;
+       gap: 0.45rem;
+       padding: 0.32rem 0.8rem;
+       border-radius: var(--radius-pill);
+       background-color: var(--bg-pill);
+       border: 1px solid var(--border-subtle);
+       color: var(--accent-secondary);
+       font-size: var(--text-xs);
+       font-weight: 600;
+       margin-bottom: var(--space-sm);
+   }
+   
+   .urgent-booking-banner h2 {
+       font-size: var(--text-2xl);
+       margin-bottom: 0.4rem;
+   }
+   
+   .urgent-booking-banner p {
+       margin: 0;
+       font-size: var(--text-sm);
+   }
+   
+   .btn-urgent-whatsapp {
+       display: inline-flex;
+       align-items: center;
+       gap: 0.55rem;
+       padding: 0.8rem 1.45rem;
+       border-radius: var(--radius-pill);
+       background-color: var(--accent-primary);
+       color: var(--on-accent);
+       font-weight: 700;
+       font-size: var(--text-sm);
+       white-space: nowrap;
+       box-shadow: var(--shadow-soft);
+   }
+   
+   .btn-urgent-whatsapp:hover {
+       background-color: var(--accent-primary-hover);
+       transform: translateY(-1px);
+   }
+   
+   /* --------------------------------------------------------------------------
+      2. PÁGINAS LEGALES: TÉRMINOS DE SERVICIO Y PRIVACIDAD
+      -------------------------------------------------------------------------- */
+   .legal-hero,
+   .quote-hero,
+   .account-hero,
+   .cart-hero {
+       text-align: center;
+       max-width: 760px;
+       margin: 0 auto var(--space-xl);
+   }
+   
+   .legal-badge,
+   .quote-badge,
+   .account-badge,
+   .cart-badge {
+       display: inline-flex;
+       align-items: center;
+       gap: 0.45rem;
+       padding: 0.35rem 0.85rem;
+       border-radius: var(--radius-pill);
+       background-color: var(--bg-surface);
+       border: 1px solid var(--border-subtle);
+       color: var(--accent-primary);
+       font-size: var(--text-xs);
+       font-weight: 700;
+       letter-spacing: 0.06em;
+       margin-bottom: var(--space-md);
+   }
+   
+   .legal-hero h1,
+   .quote-hero h1,
+   .account-hero h1,
+   .cart-hero h1 {
+       font-size: var(--text-3xl);
+       margin-bottom: var(--space-sm);
+   }
+   
+   .legal-updated {
+       font-size: var(--text-xs);
+       color: var(--text-muted);
+       margin-top: var(--space-sm);
+   }
+   
+   .legal-layout-grid {
+       display: grid;
+       grid-template-columns: 270px minmax(0, 1fr);
+       gap: var(--space-xl);
+       align-items: start;
+   }
+   
+   .legal-toc {
+       position: sticky;
+       top: 5.5rem;
+       background-color: var(--bg-surface);
+       border: 1px solid var(--border-subtle);
+       border-radius: var(--radius-md);
+       padding: var(--space-lg);
+   }
+   
+   .legal-toc h2 {
+       font-size: var(--text-base);
+       margin-bottom: var(--space-sm);
+   }
+   
+   .legal-toc ul {
+       list-style: none;
+       padding: 0;
+       margin: 0;
+       display: flex;
+       flex-direction: column;
+       gap: 0.55rem;
+       font-size: var(--text-sm);
+   }
+   
+   .legal-toc a {
+       color: var(--text-secondary);
+   }
+   
+   .legal-toc a:hover {
+       color: var(--accent-primary);
+   }
+   
+   .legal-content-articles {
+       display: flex;
+       flex-direction: column;
+       gap: var(--space-lg);
+   }
+   
+   .legal-clause-card {
+       background-color: var(--bg-surface);
+       border: 1px solid var(--border-subtle);
+       border-radius: var(--radius-md);
+       padding: var(--space-lg);
+       scroll-margin-top: 6rem;
+   }
+   
+   .legal-clause-card h2 {
+       font-size: var(--text-xl);
+       margin-bottom: var(--space-sm);
+   }
+   
+   .legal-clause-card ul {
+       padding-left: 1.2rem;
+       margin: var(--space-xs) 0 0;
+       color: var(--text-secondary);
+   }
+   
+   .legal-clause-card li {
+       margin-bottom: 0.4rem;
+   }
+   
+   /* --------------------------------------------------------------------------
+      3. COTIZAR TORTA
+      -------------------------------------------------------------------------- */
+   .quote-two-column-grid,
+   .account-two-column-grid,
+   .cart-two-column-grid {
+       display: grid;
+       grid-template-columns: minmax(0, 1.65fr) minmax(280px, 1fr);
+       gap: var(--space-xl);
+       align-items: start;
+   }
+   
+   .quote-form-card,
+   .quote-guide-card {
+       background-color: var(--bg-surface);
+       border: 1px solid var(--border-subtle);
+       border-radius: var(--radius-lg);
+       padding: var(--space-lg);
+       box-shadow: var(--shadow-soft);
+   }
+   
+   .quote-summary-sidebar {
+       display: flex;
+       flex-direction: column;
+       gap: var(--space-lg);
+   }
+   
+   .quote-guide-card h3 {
+       font-size: var(--text-lg);
+       margin-bottom: var(--space-sm);
+   }
+   
+   .quote-guide-card ul {
+       list-style: none;
+       padding: 0;
+       margin: 0;
+       display: flex;
+       flex-direction: column;
+       gap: 0.5rem;
+       font-size: var(--text-sm);
+       color: var(--text-secondary);
+   }
+   
+   .quote-sidebar-actions {
+       display: flex;
+       flex-direction: column;
+       gap: 0.65rem;
+       margin-top: var(--space-md);
+   }
+   
+   .form-submit-block {
+       margin-top: var(--space-md);
+   }
+   
+   .form-confirmation-note {
+       display: inline-flex;
+       align-items: center;
+       gap: 0.45rem;
+       margin-top: var(--space-sm);
+       font-size: var(--text-xs);
+       color: var(--text-muted);
+   }
+   
+   /* --------------------------------------------------------------------------
+      4. MI CUENTA
+      -------------------------------------------------------------------------- */
+   .account-sidebar,
+   .account-panel-card {
+       background-color: var(--bg-surface);
+       border: 1px solid var(--border-subtle);
+       border-radius: var(--radius-lg);
+       padding: var(--space-lg);
+   }
+   
+   .account-profile-card {
+       display: flex;
+       align-items: center;
+       gap: var(--space-md);
+       padding-bottom: var(--space-md);
+       border-bottom: 1px solid var(--border-subtle);
+   }
+   
+   .account-avatar {
+       width: 48px;
+       height: 48px;
+       border-radius: var(--radius-pill);
+       background-color: var(--bg-elevated);
+       border: 1px solid var(--border-strong);
+       color: var(--accent-primary);
+       display: grid;
+       place-items: center;
+       font-size: 1.2rem;
+       flex-shrink: 0;
+   }
+   
+   .account-profile-card h2 {
+       font-size: var(--text-lg);
+       margin-bottom: 0.15rem;
+   }
+   
+   .account-profile-card p {
+       font-size: var(--text-xs);
+       margin: 0;
+   }
+   
+   .account-nav-menu ul {
+       list-style: none;
+       padding: 0;
+       margin: var(--space-md) 0;
+       display: flex;
+       flex-direction: column;
+       gap: 0.4rem;
+   }
+   
+   .account-nav-menu a {
+       display: flex;
+       align-items: center;
+       gap: 0.6rem;
+       padding: 0.6rem 0.8rem;
+       border-radius: var(--radius-sm);
+       font-size: var(--text-sm);
+       color: var(--text-secondary);
+   }
+   
+   .account-nav-menu a:hover,
+   .account-nav-menu a.active {
+       background-color: var(--bg-elevated);
+       color: var(--accent-primary);
+   }
+   
+   .account-quick-cta {
+       display: flex;
+       flex-direction: column;
+       gap: 0.6rem;
+   }
+   
+   .account-content-panels {
+       display: flex;
+       flex-direction: column;
+       gap: var(--space-lg);
+   }
+   
+   .account-panel-card {
+       scroll-margin-top: 6rem;
+   }
+   
+   .account-empty-state,
+   .cart-empty-state {
+       text-align: center;
+       padding: var(--space-xl) var(--space-md);
+       background-color: var(--bg-elevated);
+       border: 1px dashed var(--border-subtle);
+       border-radius: var(--radius-md);
+   }
+   
+   .account-empty-state i,
+   .cart-empty-state i {
+       font-size: 1.8rem;
+       color: var(--accent-primary);
+       margin-bottom: var(--space-sm);
+   }
+   
+   .account-empty-state h3,
+   .cart-empty-state h3 {
+       font-size: var(--text-lg);
+       margin-bottom: 0.35rem;
+   }
+   
+   /* --------------------------------------------------------------------------
+      5. CARRITO
+      -------------------------------------------------------------------------- */
+   .cart-items-column,
+   .cart-summary-card {
+       background-color: var(--bg-surface);
+       border: 1px solid var(--border-subtle);
+       border-radius: var(--radius-lg);
+       padding: var(--space-lg);
+   }
+   
+   .cart-list-header {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       gap: var(--space-md);
+       flex-wrap: wrap;
+       margin-bottom: var(--space-md);
+   }
+   
+   .cart-list-header h2,
+   .cart-summary-card h2 {
+       font-size: var(--text-xl);
+       margin: 0;
+   }
+   
+   .text-action-link {
+       display: inline-flex;
+       align-items: center;
+       gap: 0.4rem;
+       font-size: var(--text-sm);
+       color: var(--accent-primary);
+   }
+   
+   .empty-cart-actions {
+       display: flex;
+       justify-content: center;
+       gap: 0.75rem;
+       flex-wrap: wrap;
+       margin-top: var(--space-md);
+   }
+   
+   .cart-item-card {
+       display: flex;
+       gap: var(--space-md);
+       padding: var(--space-md);
+       background-color: var(--bg-elevated);
+       border: 1px solid var(--border-subtle);
+       border-radius: var(--radius-md);
+       margin-bottom: var(--space-md);
+   }
+   
+   .cart-item-media img {
+       width: 96px;
+       height: 96px;
+       object-fit: cover;
+       border-radius: var(--radius-sm);
+   }
+   
+   .cart-item-details {
+       flex: 1;
+   }
+   
+   .cart-item-top {
+       display: flex;
+       justify-content: space-between;
+       align-items: flex-start;
+       gap: var(--space-sm);
+   }
+   
+   .item-category-tag {
+       font-size: var(--text-xs);
+       color: var(--accent-secondary);
+       font-weight: 600;
+   }
+   
+   .cart-item-top h3 {
+       font-size: var(--text-lg);
+       margin: 0.1rem 0 0.25rem;
+   }
+   
+   .btn-remove-item {
+       background: transparent;
+       border: none;
+       color: var(--text-muted);
+       padding: 0.25rem;
+   }
+   
+   .btn-remove-item:hover {
+       color: var(--accent-primary);
+   }
+   
+   .item-specs {
+       font-size: var(--text-sm);
+       margin-bottom: var(--space-sm);
+   }
+   
+   .cart-item-controls {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+   }
+   
+   .quantity-stepper {
+       display: inline-flex;
+       align-items: center;
+       gap: 0.65rem;
+       background-color: var(--bg-surface);
+       border: 1px solid var(--border-subtle);
+       border-radius: var(--radius-pill);
+       padding: 0.2rem 0.6rem;
+   }
+   
+   .qty-btn {
+       background: transparent;
+       border: none;
+       color: var(--text-primary);
+       font-weight: 700;
+   }
+   
+   .cart-dedication-box {
+       margin-top: var(--space-md);
+   }
+   
+   .cart-dedication-box label {
+       display: flex;
+       align-items: center;
+       gap: 0.45rem;
+       font-size: var(--text-sm);
+       font-weight: 600;
+       margin-bottom: 0.45rem;
+   }
+   
+   .radio-option-card {
+       display: flex;
+       align-items: center;
+       gap: 0.55rem;
+       padding: 0.65rem 0.8rem;
+       background-color: var(--bg-elevated);
+       border: 1px solid var(--border-subtle);
+       border-radius: var(--radius-sm);
+       font-size: var(--text-sm);
+       cursor: pointer;
+       margin-top: 0.5rem;
+   }
+   
+   .summary-totals-list {
+       margin: var(--space-lg) 0;
+       display: flex;
+       flex-direction: column;
+       gap: 0.65rem;
+       font-size: var(--text-sm);
+   }
+   
+   .summary-row {
+       display: flex;
+       justify-content: space-between;
+       gap: var(--space-md);
+   }
+   
+   .summary-row dt {
+       color: var(--text-secondary);
+   }
+   
+   .summary-row dd {
+       margin: 0;
+       font-weight: 600;
+       color: var(--text-primary);
+   }
+   
+   .summary-total-final {
+       padding-top: 0.65rem;
+       border-top: 1px solid var(--border-subtle);
+       font-size: var(--text-base);
+   }
+   
+   .summary-deposit-note dt,
+   .summary-deposit-note dd {
+       color: var(--accent-primary);
+   }
+   
+   /* --------------------------------------------------------------------------
+      6. RESPONSIVE DE PÁGINAS
+      -------------------------------------------------------------------------- */
+   @media (max-width: 900px) {
+       .legal-layout-grid,
+       .quote-two-column-grid,
+       .account-two-column-grid,
+       .cart-two-column-grid {
+           grid-template-columns: 1fr;
+       }
+   
+       .legal-toc {
+           position: static;
+       }
+   }
+   
+   @media (max-width: 640px) {
+       .urgent-booking-banner {
+           padding: var(--space-md);
+       }
+   
+       .cart-item-card {
+           flex-direction: column;
+       }
+   
+       .cart-item-media img {
+           width: 100%;
+           height: 180px;
+       }
+   }

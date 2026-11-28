@@ -1,0 +1,60 @@
+/* ==========================================================================
+   TORTASGATON ATELIER - VARIABLES DE DISEÑO (variables.css)
+   ========================================================================== */
+
+   :root {
+    /* 1. Paleta de colores */
+    --bg-canvas: #140a0e;          /* Fondo general oscuro (cacao / vino muy profundo) */
+    --bg-surface: #211218;         /* Superficie principal de secciones y tarjetas */
+    --bg-elevated: #2c1820;        /* Tarjetas destacadas, inputs y bloques elevados */
+    --bg-pill: rgba(255, 255, 255, 0.06);
+
+    --text-primary: #f8eff3;       /* Texto principal claro */
+    --text-secondary: #d3bec7;     /* Párrafos y descripciones secundarias */
+    --text-muted: #9e8690;         /* Etiquetas auxiliares y notas sutiles */
+
+    --accent-primary: #e4bdf7;     /* Lila pastel principal (botones y enlaces activos) */
+    --accent-primary-hover: #d8a6f2;
+    --accent-secondary: #f2c6d4;   /* Rosa pastel suave para detalles/énfasis */
+    --on-accent: #190922;          /* Texto oscuro sobre botones/badges claros */
+
+    --border-subtle: rgba(248, 239, 243, 0.11);
+    --border-strong: rgba(228, 189, 247, 0.35);
+
+    /* 2. Tipografías */
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+    /* Escala tipográfica */
+    --text-xs: 0.75rem;            /* 12px */
+    --text-sm: 0.875rem;           /* 14px */
+    --text-base: 1rem;             /* 16px */
+    --text-lg: 1.125rem;           /* 18px */
+    --text-xl: 1.35rem;            /* 21.6px */
+    --text-2xl: clamp(1.75rem, 3vw, 2.5rem);
+    --text-3xl: clamp(2.1rem, 4vw, 3.1rem);
+
+    /* 3. Espaciados y contenedores */
+    --space-xs: 0.5rem;            /* 8px */
+    --space-sm: 0.75rem;           /* 12px */
+    --space-md: 1rem;              /* 16px */
+    --space-lg: 1.5rem;            /* 24px */
+    --space-xl: 2.5rem;            /* 40px */
+    --space-2xl: 4rem;             /* 64px */
+
+    --container-max: 1200px;
+    --gutter: clamp(1rem, 3vw, 2rem);
+
+    /* 4. Radios de borde y sombras */
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 20px;
+    --radius-pill: 999px;
+
+    --shadow-card: 0 12px 32px rgba(0, 0, 0, 0.35);
+    --shadow-soft: 0 6px 18px rgba(0, 0, 0, 0.22);
+
+    /* 5. Transiciones */
+    --transition-fast: 0.18s ease;
+    --transition-base: 0.28s ease;
+}

@@ -16,9 +16,11 @@ API para ventas de tortas y pedidos
         [/] Redireccionamiento 1 (Catálogo)
         [/] Redireccionamiento 2 (Personaliza tu torta)
         [/] Redireccionamiento 3 (Como Funciona)
-        [] Redireccionamiento 4 (Galería de Clientes)
-        [] Redireccionamiento 5 (Contacto)
-        [] Redireccionamiento 6 (Cotizar tu torta)
+        [/] Redireccionamiento 4 (Galería de Clientes)
+        [/] Redireccionamiento 5 (Contacto)
+        [/] Redireccionamiento 6 (Cotizar tu torta)
+        [] Redireccionamiento 7 (Mi cuenta)
+        [] Redireccionamiento 8 (Carrito)
 - [ ] Aplicar estilos 
         [] Inicio
         [] Sección 1 (Catálogo)
@@ -27,6 +29,8 @@ API para ventas de tortas y pedidos
         [] Sección 4 (Galería de Clientes)
         [] Sección 5 (Contacto)
         [] Sección 6 (Cotizar tu torta)
+        [] Sección 7 (Mi cuenta)
+        [] Sección 8 (Carrito)
 - [/] Configurar repositorio Git y estructura inicial.
 - [ ] Diseñar las tablas en la base de datos SQL.
 - [ ] Desarrollar los endpoints de la API (Backend).

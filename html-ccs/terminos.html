@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Términos de Servicio - TortasGaton</title>
+    <link rel="icon" type="image/png" href="../src/assets/images/Logo Gaton V2.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#09f">
+    <meta name="description" content="Términos y condiciones de contratación, reservas, pagos y entregas climatizadas de TortasGaton Atelier.">
+    
+    <!-- Iconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <!-- Iconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <!-- Fuentes tipográficas (Editorial Serif + Sans limpia) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Hojas de estilo TortasGaton -->
+    <link rel="stylesheet" href="./variables.css">
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./pages.css">
+    </head>
+    <body>
+        <!-- 1. BARRA DE NAVEGACIÓN -->
+        <header>
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="../src/assets/images/Logo Gaton V1.png" alt="TortasGaton Logo" width="25">
+                    <span>TortasGaton</span>
+                </a>
+        
+                <div class="nav-search">
+                    <form action="/buscar" method="GET">
+                        <input type="search" name="q" placeholder="Buscar..." aria-label="Buscar">
+                        <button type="submit" aria-label="Buscar">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+        
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="personaliza.html" class="btn-highlight">Personaliza tu Torta</a></li>
+                    <li><a href="funciona.html">Cómo Funciona</a></li>
+                    <li><a href="clientes.html">Galería de Clientes</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+        
+                <div class="nav-actions">
+                    <a href="cotizar.html" class="btn-primary">Cotizar Torta</a>
+                    <a href="carrito.html" class="btn-icon cart-btn" aria-label="Carrito">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                        <span class="badge">0</span>
+                    </a>
+                    <a href="cuenta.html" class="btn-icon account-btn" aria-label="Cuenta">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- 2. CONTENIDO PRINCIPAL: TÉRMINOS DE SERVICIO -->
+        <main class="legal-main" id="terminos">
+            <!-- Encabezado de página legal -->
+            <section class="legal-hero" aria-labelledby="terms-hero-title">
+                <div class="legal-badge">
+                    <i class="fa-solid fa-file-contract" aria-hidden="true"></i>
+                    <span>MARCO DE CONTRATACIÓN &amp; CALIDAD</span>
+                </div>
+
+                <h1 id="terms-hero-title">Términos de <em>Servicio</em></h1>
+                <p>Cada creación de TortasGaton Atelier se elabora artesanalmente bajo pedido exclusivo. Aquí detallamos las condiciones que garantizan la puntualidad, frescura y precisión estética de tu celebración.</p>
+                <p class="legal-updated">Última actualización: Noviembre 2026</p>
+            </section>
+
+            <!-- Cuerpo estructurado con índice lateral y artículos -->
+
+            <div class="legal-layout-grid">
+                <!-- Índice rápido de cláusulas -->
+                <aside class="legal-toc" aria-label="Índice de cláusulas">
+                    <h2>Contenido</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="#plazos-reserva">1. Plazos de Anticipación y Reserva</a></li>
+                            <li><a href="#presupuestos-pagos">2. Presupuestos, Señas y Pagos</a></li>
+                            <li><a href="#diseno-fidelidad">3. Diseño Artesanal y Fidelidad Estética</a></li>
+                            <li><a href="#entregas-retiros">4. Entregas Climatizadas y Protocolo de Retiro</a></li>
+                            <li><a href="#alergenos-conservacion">5. Alérgenos, Estructuras y Conservación</a></li>
+                            <li><a href="#modificaciones-cancelaciones">6. Modificaciones y Reprogramaciones</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+                <!-- Cláusulas detalladas -->
+                <div class="legal-content-articles">
+                    <article class="legal-clause-card" id="plazos-reserva">
+                        <h2>1. Plazos de Anticipación y Reserva</h2>
+                        <p>Para asegurar la disponibilidad de cupos técnicos en nuestro obrador y el tiempo de curado que exige la alta pastelería, los encargos se rigen por los siguientes plazos mínimos:</p>
+                        <ul>
+                            <li><strong>Tortas clásicas y de catálogo:</strong> Mínimo <strong>48 horas</strong> hábiles de antelación.</li>
+                            <li><strong>Tortas temáticas, modelado 3D y pisos múltiples:</strong> Entre <strong>4 y 7 días</strong> previos al evento.</li>
+                            <li><strong>Bodas, 15 años y eventos corporativos:</strong> Se recomienda reservar con <strong>2 a 4 semanas</strong> de anticipación (o hasta 4 meses para montajes complejos).</li>
+                        </ul>
+                    </article>
+
+                    <article class="legal-clause-card" id="presupuestos-pagos">
+                        <h2>2. Presupuestos, Señas y Pagos</h2>
+                        <p>Las cotizaciones emitidas por nuestro equipo tienen una validez de <strong>7 días corridos</strong>. La fecha del evento queda bloqueada en nuestra agenda únicamente tras la acreditación de una <strong>seña del 50%</strong> del valor total presupuestado.</p>
+                        <p>El <strong>50% restante</strong> deberá abonarse hasta 48 horas antes de la fecha pactada para el retiro en atelier o despacho climatizado. En el caso de contratar una cata privada, el valor abonado por la degustación se descuenta íntegramente al confirmar y señar el pedido final.</p>
+                    </article>
+
+                    <article class="legal-clause-card" id="diseno-fidelidad">
+                        <h2>3. Diseño Artesanal y Fidelidad Estética</h2>
+                        <p>Trabajamos a partir de bocetos, paletas cromáticas y referencias visuales aportadas por el cliente. Al tratarse de piezas elaboradas 100% a mano con coberturas naturales (buttercream de merengue suizo, ganache de chocolate belga, flores prensadas o modelado manual), pueden existir sutiles variaciones artísticas propias de una obra única, manteniendo siempre la armonía, proporciones y estética aprobadas en el boceto final.</p>
+                    </article>
+
+                    <article class="legal-clause-card" id="entregas-retiros">
+                        <h2>4. Entregas Climatizadas y Protocolo de Retiro</h2>
+                        <p>Ofrecemos dos modalidades de entrega:</p>
+                        <ul>
+                            <li><strong>Flete Climatizado TortasGaton:</strong> Transporte en vehículo isotérmico a temperatura controlada (16°C) con anclaje estructural y montaje in situ para eventos dentro de la cobertura urbana y zonas concertadas.</li>
+                            <li><strong>Retiro en Atelier (Av. Las Hortensias 412):</strong> Se realiza de martes a sábado de 09:30 a 19:30 hs (domingos solo con cita agendada). Nuestro personal asiste en la colocación de la caja reforzada sobre una superficie horizontal plana dentro del vehículo. Una vez retirada la pieza del obrador, la responsabilidad sobre el traslado recae en el cliente.</li>
+                        </ul>
+                    </article> 
+
+                    <article class="legal-clause-card" id="alergenos-conservacion">
+                        <h2>5. Alérgenos, Estructuras y Conservación</h2>
+                        <p>Nuestras elaboraciones se producen en un obrador donde se manipulan gluten, lácteos, huevos, frutos secos (almendras, pistachos, avellanas) y soja. Si bien contamos con recetas <strong>Sin TACC</strong> bajo protocolo estricto, es obligación del anfitrión informar previamente sobre alergias o intolerancias severas de sus invitados.</p>
+                        <p>Las tortas de varios pisos incluyen soportes internos de grado alimentario (varillas de sostén y discos separadores) que deben retirarse antes del corte y servicio.</p>
+                    </article>
+
+                    <article class="legal-clause-card" id="modificaciones-cancelaciones">
+                        <h2>6. Modificaciones, Reprogramaciones y Cancelaciones</h2>
+                        <p>Cualquier cambio en sabores, cantidad de porciones o detalles estéticos debe solicitarse con al menos <strong>72 horas de antelación</strong> (o 7 días en el caso de bodas y eventos de más de 80 invitados).</p>
+                        <p>En caso de cancelación por parte del cliente con más de 7 días de anticipación, la seña podrá quedar como saldo a favor para un futuro pedido dentro de los 90 días siguientes. Cancelaciones realizadas con menos de 72 horas no admiten reintegro debido a la compra de insumos frescos y horas de producción ya asignadas.</p>
+                    </article>
+                </div>
+            </div>
+        </main>
+        <!-- 3. FOOTER -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <h3 class="brand-title">
+                        <img src="../src/assets/images/Logo Gaton V2.png" alt="TortasGatonV2 Logo" width="25" class="footer-logo"> 
+                        TortasGaton
+                    </h3>
+                    <p>Alta pastelería artesanal y diseño de tortas personalizadas para bodas, celebraciones y momentos inolvidables.</p>
+                    
+                    <div class="footer-socials">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Instagram">
+                            <i class="fa-brands fa-square-instagram" aria-hidden="true"></i>   
+                        </a>
+                        <a href="https://wa.me/5491134567890" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Chat de WhatsApp">
+                            <i class="fa-brands fa-square-whatsapp" aria-hidden="true"></i>
+                        </a>
+                        <a href="mailto:pedidos@tortasgaton.com" class="btn" aria-label="Correo Electrónico">
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="footer-links">
+                    <h4>Políticas de Anticipación</h4>
+                    <p>Para garantizar la frescura y el detalle artesanal:</p>
+                    <ul>
+                        <li><strong>Tortas clásicas y de catálogo:</strong> Mínimo <strong>48 horas</strong> de antelación.</li>
+                        <li><strong>Tortas temáticas y pisos múltiples:</strong> De <strong>4 a 7 días</strong> previos.</li>
+                        <li><strong>Diseños de bodas y grandes eventos:</strong> Se sugiere reservar con <strong>2 a 4 semanas</strong>.</li>
+                    </ul>
+                </div>
+        
+                <div class="footer-info">
+                    <h4>Entregas y Cobertura</h4>
+                    <p>Envíos en vehículos climatizados especializados en pastelería delicada o retiro directo en nuestro atelier.</p>
+                    <p><strong>Zonas de despacho:</strong> Cobertura urbana y alrededores.</p>
+                    <p>Franjas horarias puntuales coordinadas previamente. Embalajes reforzados de grado alimentario.</p>
+                </div>
+        
+                <div class="footer-warranty">
+                    <h4>Garantía y Calidad</h4>
+                    <p>Ingredientes de origen certificado, chocolate belga, mantequilla pura y frutas de estación.</p>
+                    <div class="footer-badges">
+                        <span class="badge-tag">Higiene Certificada</span>
+                        <span class="badge-tag">Bespoke Pastry</span>
+                        <span class="badge-tag">Opciones Sin TACC</span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="footer-bottom">
+                <p>&copy; 2026 TortasGaton Atelier. Todos los derechos reservados.</p>
+                <ul class="footer-legal">
+                    <li><a href="funciona.html#faq">Preguntas Frecuentes</a></li>
+                    <li><a href="terminos.html#terminos">Términos de Servicio</a></li>
+                    <li><a href="privacidad.html#privacidad">Privacidad</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

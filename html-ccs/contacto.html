@@ -9,67 +9,71 @@
     <meta name= "theme-color" content="#09f">
     <meta name="description" content="La Torta que quieras te la tengo y si no te la fabrico 😋">
     
-
-
-    
     <!-- Inicio iconos del footer -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <!-- Fin iconos del footer -->
+	<!-- Iconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <!-- Fuentes tipográficas (Editorial Serif + Sans limpia) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Hojas de estilo TortasGaton -->
+    <link rel="stylesheet" href="./variables.css">
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./pages.css">
 </head>
 
 <body>
 	<!-- 1. BARRA DE NAVEGACIÓN GALERIA DE CONTACTO-->
-		<header>
-			<nav class="navbar">
-				<!-- Logo con imagen y texto-->
-				<a href="index.html" class="logo">
-            		<img src="../src/assets/images/Logo Gaton V1.png" alt="TortasGaton Logo" width="25">
-            		<span>TortasGaton</span>
-        		</a>
-
-        		<!-- Botón/Campo de búsqueda -->
-        		<div class="nav-search">
-        			<form action="/buscar" method="GET">
-        				<input type="search" name="q" placeholder="Buscar..." aria-label="Buscar">
-        				<button type="submit" aria-label="Buscar">
-        					<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        		<circle cx="11" cy="11" r="8"></circle>
-                        		<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    		</svg>	
-        				</button>
-        			</form>	
-        		</div>
-
-				 <!-- Enlaces de navegación -->
-        		<ul class="nav-links">
-            		<li><a href="index.html">Inicio</a></li>
-            		<li><a href="catalogo.html">Catálogo</a></li>
-            		<li><a href="personaliza.html" class="btn-highlight">Personaliza tu Torta</a></li>
-            		<li><a href="funciona.html">Cómo Funciona</a></li>
-            		<li><a href="clientes.html">Galería de Clientes</a></li>
-            		<li><a href="contacto.html">Contacto</a></li>
-        		</ul>
-
-        		<!-- Acciones a la derecha -->
-        		<div class="nav-actions">
-        			<a href="cotizar.html" class="btn-primary">Cotizar Torta</a>
-        			<a href="#carrito" class="btn-icon cart-btn" aria-label="Carrito">
-                		<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    		<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-                    		<line x1="3" y1="6" x2="21" y2="6"></line>
-                    		<path d="M16 10a4 4 0 0 1-8 0"></path>
-                		</svg>
-                		<span class="badge">0</span>
-            		</a>
-            		<a href="#cuenta" class="btn-icon account-btn" aria-label="Cuenta">
-                		<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    		<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                    		<circle cx="12" cy="7" r="4"></circle>
-                		</svg>
-            		</a>
-        		</div>
-			</nav>	
-		</header>
+	<header>
+		<nav class="navbar">
+			<a href="index.html" class="logo">
+				<img src="../src/assets/images/Logo Gaton V1.png" alt="TortasGaton Logo" width="25">
+				<span>TortasGaton</span>
+			</a>
+	
+			<div class="nav-search">
+				<form action="/buscar" method="GET">
+					<input type="search" name="q" placeholder="Buscar..." aria-label="Buscar">
+					<button type="submit" aria-label="Buscar">
+						<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+							<circle cx="11" cy="11" r="8"></circle>
+							<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+						</svg>
+					</button>
+				</form>
+			</div>
+	
+			<ul class="nav-links">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="catalogo.html">Catálogo</a></li>
+				<li><a href="personaliza.html" class="btn-highlight">Personaliza tu Torta</a></li>
+				<li><a href="funciona.html">Cómo Funciona</a></li>
+				<li><a href="clientes.html">Galería de Clientes</a></li>
+				<li><a href="contacto.html" aria-current="page">Contacto</a></li>
+			</ul>
+	
+			<div class="nav-actions">
+				<a href="cotizar.html" class="btn-primary">Cotizar Torta</a>
+				<a href="carrito.html" class="btn-icon cart-btn" aria-label="Carrito">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+						<line x1="3" y1="6" x2="21" y2="6"></line>
+						<path d="M16 10a4 4 0 0 1-8 0"></path>
+					</svg>
+					<span class="badge">0</span>
+				</a>
+				<a href="cuenta.html" class="btn-icon account-btn" aria-label="Cuenta">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+						<circle cx="12" cy="7" r="4"></circle>
+					</svg>
+				</a>
+			</div>
+		</nav>
+	</header>
 		<!-- 2. Contenido Principal: Contacto -->
 		<main class="contact-main">
 			<!-- Encabezado principal -->
@@ -100,76 +104,411 @@
 				</div>
 			</section>
 
-			
-			
+			<!-- SECCIÓN: RESERVA DE VISITA Y DATOS DEL ATELIER -->
+			<section class="contact-booking-section" aria-labelledby="booking-form-title">
+				<div class="contact-two-column-grid">
+					<!-- COLUMNA IZQUIERDA: FORMULARIO DE RESERVA -->
+					<div class="booking-form-card">
+						<header class="booking-form-header">
+							<div>
+								<span class="section-eyebrow">PASO A PASO</span>
+								<h2 id="booking-form-title">Reserva de Visita &amp; Consulta</h2>
+							</div>
+							<span class="form-header-icon" aria-hidden="true">
+								<i class="fa-regular fa-calendar"></i>
+							</span>
+						</header>
 
+						<form class="atelier-booking-form" action="/reservar-cita" method="POST">
+							<fieldset class="form-fieldset">
+								<legend>Tipo de Encuentro o Consulta <span aria-hidden="true">*</span></legend>
+								<div class="radio-options-grid">
+									<label class="radio-option-card">
+										<input type="radio" name="tipo_encuentro" value="cata-bodas-15" checked required>
+										<span>Cata de Bodas / 15 Años</span>
+									</label>
+									<label class="radio-option-card">
+										<input type="radio" name="tipo_encuentro" value="encargo-personalizado">
+										<span>Encargo Personalizado</span>
+									</label>
+									<label class="radio-option-card">
+										<input type="radio" name="tipo_encuentro" value="coordinacion-retiro">
+										<span>Coordinación de Retiro</span>
+									</label>
+									<label class="radio-option-card">
+										<input type="radio" name="tipo_encuentro" value="prensa-colaboraciones">
+										<span>Prensa &amp; Colaboraciones</span>
+									</label>
+								</div>
+							</fieldset>
+
+							<div class="form-row-2col">
+								<div class="form-group">
+									<label for="nombre-completo">Nombre Completo <span aria-hidden="true">*</span></label>
+									<div class="input-with-icon">
+										<i class="fa-regular fa-user" aria-hidden="true"></i>
+										<input type="text" id="nombre-completo" name="nombre_completo" placeholder="Ej. Valentina Morales" required>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="telefono-whatsapp">Teléfono / WhatsApp <span aria-hidden="true">*</span></label>
+									<div class="input-with-icon">
+										<i class="fa-solid fa-phone" aria-hidden="true"></i>
+										<input type="tel" id="telefono-whatsapp" name="telefono" placeholder="+54 9 11 ..." required>
+									</div>
+								</div>
+							</div>
+							<div class="form-row-2col">
+								<div class="form-group">
+									<label for="correo-electronico">Correo Electrónico <span aria-hidden="true">*</span></label>
+									<div class="input-with-icon">
+										<i class="fa-regular fa-envelope" aria-hidden="true"></i>
+										<input type="email" id="correo-electronico" name="email" placeholder="tu@correo.com" required>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="comensales-estimados">Comensales Estimados</label>
+									<div class="input-with-icon">
+										<i class="fa-solid fa-user-group" aria-hidden="true"></i>
+										<input type="number" id="comensales-estimados" name="comensales" min="1" placeholder="Ej. 120">
+									</div>
+								</div>
+							</div>
+
+							<div class="form-row-2col">
+								<div class="form-group">
+									<label for="fecha-evento">Fecha Estimada del Evento</label>
+									<div class="input-with-icon">
+										<input type="date" id="fecha-evento" name="fecha_evento">
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="franja-visita">Franja Preferida de Visita</label>
+									<div class="input-with-icon">
+										<i class="fa-regular fa-clock" aria-hidden="true"></i>
+										<select id="franja-visita" name="franja_visita">
+											<option value="mar-vie-manana">Martes a Viernes · Mañana (11:00 - 14:00)</option>
+											<option value="mar-vie-tarde">Martes a Viernes · Tarde (14:00 - 18:30)</option>
+											<option value="sabado-manana">Sábados · Mañana (10:00 - 13:30)</option>
+											<option value="domingos-agendados">Domingos · Solo agendados (10:00 - 14:00)</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="idea-tematica">Cuéntanos sobre tu Idea, temática o paleta de colores</label>
+								<textarea id="idea-tematica" name="idea_tematica" rows="4" placeholder="Ej. Boda botánica en estancia, queremos bizcochos de pistacho y frambuesa con terminación de crema texturada..."></textarea>
+							</div>
+
+							<div class="form-submit-block">
+								<button type="submit" class="btn-submit-primary">
+									<i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+									<span>Solicitar Reserva de Cita en Atelier</span>
+								</button>
+								<p class="form-confirmation-note">
+									<i class="fa-solid fa-lock" aria-hidden="true"></i>
+									<span>Confirmación personalizada sin costo por WhatsApp en menos de 2 horas hábiles.</span>
+								</p>
+							</div>
+						</form>
+					</div>
+
+					<!-- COLUMNA DERECHA: UBICACIÓN, HORARIOS Y CANALES DIRECTOS -->
+					<aside class="atelier-info-sidebar" aria-label="Ubicación, horarios y canales directos del atelier">
+						<div class="atelier-location-card">
+							<div class="location-header-meta">
+								<span class="location-pill">
+									<i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+									<span>Palermo Soho, CABA</span>
+								</span>
+							</div>
+
+							<span class="atelier-label">DIRECCIÓN ATELIER</span>
+                        	<h3 class="atelier-address">Av. Las Hortensias 412</h3>
+
+							<ul class="atelier-features-list">
+								<li>
+									<span class="feature-icon-circle" aria-hidden="true">
+										<i class="fa-solid fa-person-walking"></i>
+									</span>
+									<div>
+										<h4>Accesos y Entorno</h4>
+										<p>A 3 cuadras de Plaza Armenia. Zona gastronómica de fácil llegada peatonal y vehicular.</p>
+									</div>
+								</li>
+
+								<li>
+									<span class="feature-icon-circle" aria-hidden="true">
+										<i class="fa-solid fa-p"></i>
+									</span>
+									<div>
+										<h4>Estacionamiento Clientes</h4>
+										<p>Dársena de detención rápida y estacionamiento exclusivo para retiro de estructuras pesadas.</p>
+									</div>
+								</li>
+
+								<li>
+									<span class="feature-icon-circle" aria-hidden="true">
+										<i class="fa-solid fa-snowflake"></i>
+									</span>
+									<div>
+										<h4>Ambiente Climatizado a 19°C</h4>
+										<p>Preservación óptima de coberturas botánicas de manteca de cacao y cremas de origen.</p>
+									</div>
+								</li>
+							</ul>
+							<div class="atelier-hours-box">
+								<h4>
+									<i class="fa-regular fa-clock" aria-hidden="true"></i>
+									<span>Horarios de Funcionamiento</span>
+								</h4>
+								<dl class="hours-list">
+									<div class="hours-row">
+										<dt>Obrador &amp; Retiro de Tortas:</dt>
+										<dd>Mar a Sáb: 09:30 - 19:30</dd>
+									</div>
+									<div class="hours-row">
+										<dt>Domingos:</dt>
+										<dd>10:00 - 14:00 (Solo agendados)</dd>
+									</div>
+									<div class="hours-row">
+										<dt>Sala de Catas &amp; Citas:</dt>
+										<dd>Mar a Vie: 11:00 - 18:30</dd>
+									</div>
+									<div class="hours-row">
+										<dt>Lunes:</dt>
+										<dd>Cerrado por horneado técnico</dd>
+									</div>
+								</dl>
+							</div>						
+						</div>
+
+						<div class="direct-channels-card">
+							<h3>Canales Directos Inmediatos</h3>
+
+                        	<a href="https://wa.me/5491134567890" target="_blank" rel="noopener noreferrer" class="channel-link-item">
+                            	<span class="channel-icon-box" aria-hidden="true">
+                                <i class="fa-regular fa-comment-dots"></i>
+                            	</span>
+                            	<div class="channel-text">
+                                	<strong>+54 9 11 3456-7890</strong>
+                                	<span>Línea directa Camila Vega · Chef Pastelera</span>
+                            	</div>
+                            	<i class="fa-solid fa-arrow-right channel-arrow" aria-hidden="true"></i>
+                       		</a>
+
+							   <a href="tel:+541147829900" class="channel-link-item">
+								<span class="channel-icon-box" aria-hidden="true">
+									<i class="fa-solid fa-phone"></i>
+								</span>
+								<div class="channel-text">
+									<strong>+54 11 4782-9900</strong>
+									<span>Recepción Atelier &amp; Logística</span>
+								</div>
+								<i class="fa-solid fa-phone channel-arrow" aria-hidden="true"></i>
+							</a>
+
+							<a href="mailto:pedidos@tortasgaton.com" class="channel-link-item">
+								<span class="channel-icon-box" aria-hidden="true">
+									<i class="fa-solid fa-at"></i>
+								</span>
+								<div class="channel-text">
+									<strong>pedidos@tortasgaton.com</strong>
+									<span>Envío de referencias &amp; bocetos</span>
+								</div>
+								<i class="fa-solid fa-arrow-up-right-from-square channel-arrow" aria-hidden="true"></i>
+							</a>
+						</div>
+					</aside>
+				</div>
+			</section>
+			<!-- SECCIÓN: CÓMO ES UNA CATA EN TORTASGATON -->
+			<section class="tasting-experience-section" aria-labelledby="tasting-experience-title">
+				<div class="tasting-section-header">
+					<span class="section-eyebrow">UN RITUAL PARA LOS SENTIDOS</span>
+					<h2 id="tasting-experience-title">¿Cómo es una Cata en <em>TortasGaton</em>?</h2>
+					<p>Diseñar una torta monumental no debería ser un trámite abstracto. Abrimos las puertas de nuestro salón de té privado para que experimentes cada sabor antes de tu gran día.</p>
+				</div>
+
+				<div class="tasting-cards-grid">
+					<!-- Paso 01 -->
+					<article class="tasting-step-card">
+						<div class="tasting-media">
+							<img src="../src/assets/images/cata-01-muestrario.jpg" alt="Degustación de bizcochos y rellenos servidos en mesa privada con copas">
+							<span class="tasting-badge">01 · Muestrario Sensorial</span>
+						</div>
+						<div class="tasting-body">
+							<h3>4 Bizcochos &amp; 6 Rellenos</h3>
+							<p>Seleccionamos combinaciones de masa húmeda de vainilla bourbon, chocolate amargo 70%, pistacho y curd de maracuyá maridados con café de especialidad o espumante brut.</p>
+							<div class="tasting-footer-tag">
+								<i class="fa-solid fa-utensils" aria-hidden="true"></i>
+								<span>Maridaje incluido</span>
+							</div>
+						</div>
+					</article>
+
+					<!-- Paso 02 -->
+					<article class="tasting-step-card">
+						<div class="tasting-media">
+							<img src="../src/assets/images/cata-02-boceto.jpg" alt="Chef pastelera dibujando un boceto de torta a escala en el taller">
+							<span class="tasting-badge">02 · Diseño &amp; Boceto en Vivo</span>
+						</div>
+						<div class="tasting-body">
+							<h3>45 Minutos con la Chef</h3>
+							<p>Reunión técnica directa con Camila Vega para definir alturas, cantidad de pisos, flores comestibles prensadas, estructura interna y la coherencia con la decoración de tu salón.</p>
+							<div class="tasting-footer-tag">
+								<i class="fa-solid fa-pen-ruler" aria-hidden="true"></i>
+								<span>Boceto a escala en mano</span>
+							</div>
+						</div>
+					</article>
+
+					<!-- Paso 03 -->
+					<article class="tasting-step-card">
+						<div class="tasting-media">
+							<img src="../src/assets/images/cata-03-bonificacion.jpg" alt="Torta ceremonial de varios pisos decorada con flores sobre base elevada">
+							<span class="tasting-badge">03 · Inversión Bonificada</span>
+						</div>
+						<div class="tasting-body">
+							<h3>Cata 100% Reintegrable</h3>
+							<p>El valor de la degustación para dos personas se descuenta en su totalidad al confirmar y señar el pedido final de tu torta de celebración.</p>
+							<div class="tasting-footer-tag">
+								<i class="fa-solid fa-cake-candles" aria-hidden="true"></i>
+								<span>Bonificación directa</span>
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+			<!-- SECCIÓN: PREGUNTAS FRECUENTES SOBRE VISITAS Y RETIROS -->
+			<section class="contact-faq-section" id="faq-visitas" aria-labelledby="contact-faq-title">
+				<div class="contact-faq-layout">
+					<!-- Columna izquierda: Título y llamado a consulta directa -->
+					<div class="contact-faq-sidebar">
+						<span class="section-eyebrow">DUDAS HABITUALES</span>
+						<h2 id="contact-faq-title">Preguntas Frecuentes sobre <em>Visitas &amp; Retiros</em></h2>
+						<p>Nos tomamos la pastelería como una arquitectura de alta precisión. Aquí resolvemos cómo cuidamos cada detalle logístico y presencial.</p>
+	
+						<div class="direct-chat-callout">
+							<h3>¿Prefieres consultarnos en directo?</h3>
+							<p>Nuestra recepcionista pastelera te orienta en minutos por mensaje.</p>
+							<a href="https://wa.me/5491134567890" target="_blank" rel="noopener noreferrer" class="text-action-link">
+								<span>Iniciar chat de consultas</span>
+								<i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+	
+					<!-- Columna derecha: Tarjetas de preguntas frecuentes -->
+					<div class="contact-faq-list">
+						<article class="faq-info-card">
+							<h3>
+								<i class="fa-solid fa-store" aria-hidden="true"></i>
+								<span>¿Puedo visitar el atelier sin cita previa?</span>
+							</h3>
+							<p>Para garantizar la calma acústica, la higiene de grado técnico y la frescura de nuestras elaboraciones, la sala de degustaciones y el obrador atienden <strong>únicamente con cita previa confirmada</strong>. Para retiros de pedidos ya agendados, el horario es corrido de martes a sábado de 09:30 a 19:30.</p>
+						</article>
+	
+						<article class="faq-info-card">
+							<h3>
+								<i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+								<span>¿Cómo es el protocolo de retiro de tortas delicadas?</span>
+							</h3>
+							<p>Cada creación se entrega en una <strong>caja estructural de base reforzada y paredes antichoque</strong> con antideslizante alimentario. Nuestro personal asiste personalmente al vehículo para supervisar que la torta viaje en superficie horizontal plana (suelo del copiloto o baúl nivelado, con aire acondicionado a máxima potencia).</p>
+						</article>
+	
+						<article class="faq-info-card">
+							<h3>
+								<i class="fa-solid fa-truck-fast" aria-hidden="true"></i>
+								<span>¿Hacen envíos a zonas fuera de la cobertura urbana estándar?</span>
+							</h3>
+							<p>Sí. Para bodas y grandes eventos en estancias de Zona Norte, Zona Sur u Oeste (Pilar, Cañuelas, Tigre, etc.), disponemos de un servicio de <strong>Flete Climatizado con Montaje In Situ</strong> a cargo de un pastelero de nuestro equipo, asegurando que la torta llegue impecable sin importar la distancia.</p>
+						</article>
+					</div>
+				</div>
+			</section>
+			<!-- Sección: Urgencias y cupos de última hora -->
+			<section class="urgent-booking-banner" aria-labelledby="urgent-booking-title">
+				<div class="urgent-banner-content">
+					<div class="urgent-status-pill">
+						<i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i>
+                    	<span>Cupos de horneado para este fin de semana</span>
+					</div>
+
+					<h2 id="urgent-booking-title">¿Tienes una urgencia o tu evento es <em>inminente</em>?</h2>
+                	<p>Escríbenos directamente por WhatsApp para comprobar la disponibilidad inmediata de cupos técnicos en nuestro obrador para pedidos de última hora.</p>
+				</div>
+
+				<div class="urgent-banner-action">
+					<a href="https://wa.me/5491134567890" target="_blank" rel="noopener noreferrer" class="btn-urgent-whatsapp">
+						<i class="fa-regular fa-comment-dots" aria-hidden="true"></i>
+						<span>WhatsApp Inmediato</span>
+					</a>
+				</div>
+			</section>
 		</main>
-		
-
-		
 		<footer>
 			<div class="footer-container">
-				<!-- Columna 1: Marca y Redes -->
 				<div class="footer-brand">
 					<h3 class="brand-title">
-					<img src="../src/assets/images/Logo Gaton V2.png" alt="TortasGatonV2 Logo" width="25" class="footer-logo"> 
-					TortasGaton
+						<img src="../src/assets/images/Logo Gaton V2.png" alt="TortasGatonV2 Logo" width="25" class="footer-logo"> 
+						TortasGaton
 					</h3>
 					<p>Alta pastelería artesanal y diseño de tortas personalizadas para bodas, celebraciones y momentos inolvidables.</p>
-			
+					
 					<div class="footer-socials">
 						<a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Instagram">
 							<i class="fa-brands fa-square-instagram" aria-hidden="true"></i>   
 						</a>
-						<a href="https://wa.me" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Chat de WhatsApp">
+						<a href="https://wa.me/5491134567890" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Chat de WhatsApp">
 							<i class="fa-brands fa-square-whatsapp" aria-hidden="true"></i>
 						</a>
-						<a href="mailto:tu-correo@ejemplo.com" class="btn" aria-label="Correo Electrónico">
+						<a href="mailto:pedidos@tortasgaton.com" class="btn" aria-label="Correo Electrónico">
 							<i class="fa-solid fa-envelope" aria-hidden="true"></i>
 						</a>
+					</div>
+				</div>
+		
+				<div class="footer-links">
+					<h4>Políticas de Anticipación</h4>
+					<p>Para garantizar la frescura y el detalle artesanal:</p>
+					<ul>
+						<li><strong>Tortas clásicas y de catálogo:</strong> Mínimo <strong>48 horas</strong> de antelación.</li>
+						<li><strong>Tortas temáticas y pisos múltiples:</strong> De <strong>4 a 7 días</strong> previos.</li>
+						<li><strong>Diseños de bodas y grandes eventos:</strong> Se sugiere reservar con <strong>2 a 4 semanas</strong>.</li>
+					</ul>
+				</div>
+		
+				<div class="footer-info">
+					<h4>Entregas y Cobertura</h4>
+					<p>Envíos en vehículos climatizados especializados en pastelería delicada o retiro directo en nuestro atelier.</p>
+					<p><strong>Zonas de despacho:</strong> Cobertura urbana y alrededores.</p>
+					<p>Franjas horarias puntuales coordinadas previamente. Embalajes reforzados de grado alimentario.</p>
+				</div>
+		
+				<div class="footer-warranty">
+					<h4>Garantía y Calidad</h4>
+					<p>Ingredientes de origen certificado, chocolate belga, mantequilla pura y frutas de estación.</p>
+					<div class="footer-badges">
+						<span class="badge-tag">Higiene Certificada</span>
+						<span class="badge-tag">Bespoke Pastry</span>
+						<span class="badge-tag">Opciones Sin TACC</span>
+					</div>
 				</div>
 			</div>
-
-			<!-- Columna 2: Políticas de Anticipación -->
-			<div class="footer-links">
-				<h4>Políticas de Anticipación</h4>
-				<p>Para garantizar la frescura y el detalle artesanal:</p>
-				<ul>
-					<li><strong>Tortas clásicas y de catálogo:</strong> Mínimo <strong>48 horas</strong> de antelación.</li>
-					<li><strong>Tortas temáticas y pisos múltiples:</strong> De <strong>4 a 7 días</strong> previos.</li>
-					<li><strong>Diseños de bodas y grandes eventos:</strong> Se sugiere reservar con <strong>2 a 4 semanas</strong>.</li>
-				</ul>
-			</div>
-
-			<!-- Columna 3: Entregas y Cobertura -->
-			<div class="footer-info">
-				<h4>Entregas y Cobertura</h4>
-				<p>Envíos en vehículos climatizados especializados en pastelería delicada o retiro directo en nuestro atelier.</p>
-				<p><strong>Zonas de despacho:</strong> Cobertura urbana y alrededores.</p>
-				<p>Franjas horarias puntuales coordinadas previamente. Embalajes reforzados de grado alimentario.</p>
-			</div>
-
-			<!-- Columna 4: Garantía y Calidad -->
-			<div class="footer-warranty">
-				<h4>Garantía y Calidad</h4>
-				<p>Ingredientes de origen certificado, chocolate belga, mantequilla pura y frutas de estación.</p>
-				<div class="footer-badges">
-					<span class="badge-tag">Higiene Certificada</span>
-					<span class="badge-tag">Bespoke Pastry</span>
-					<span class="badge-tag">Opciones Sin TACC</span>
-				</div>
-			</div>
-		</div>
-
-		<!-- Barra Inferior (Copyright y Enlaces Secundarios) -->
-		<div class="footer-bottom">
-			<p>&copy; 2025 TortasGaton Atelier. Todos los derechos reservados.</p>
+		
+			<div class="footer-bottom">
+				<p>&copy; 2026 TortasGaton Atelier. Todos los derechos reservados.</p>
 				<ul class="footer-legal">
 					<li><a href="funciona.html#faq">Preguntas Frecuentes</a></li>
-					<li><a href="#terminos">Términos de Servicio</a></li>
-					<li><a href="#privacidad">Privacidad</a></li>
+					<li><a href="terminos.html#terminos">Términos de Servicio</a></li>
+					<li><a href="privacidad.html#privacidad">Privacidad</a></li>
 				</ul>
-		</div>
-	</footer>
+			</div>
+		</footer>
 </body>
 </html>

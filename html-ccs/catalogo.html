@@ -12,21 +12,28 @@
     <!-- Inicio iconos del footer -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <!-- Fin iconos del footer -->
-    <!-- Para Archivo tu archivo CSS -->
-    <!-- <link rel="stylesheet" href="../src/assets/css/styles.css"> -->
+    <!-- Iconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <!-- Fuentes tipográficas (Editorial Serif + Sans limpia) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Hojas de estilo TortasGaton -->
+    <link rel="stylesheet" href="./variables.css">
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./pages.css">
 </head>
 
 <body>
     <!-- 1. BARRA DE NAVEGACIÓN CATÁLOGO-->
     <header>
         <nav class="navbar">
-            <!-- Logo con imagen y texto-->
             <a href="index.html" class="logo">
                 <img src="../src/assets/images/Logo Gaton V1.png" alt="TortasGaton Logo" width="25">
                 <span>TortasGaton</span>
             </a>
-
-            <!-- Botón/Campo de búsqueda -->
+    
             <div class="nav-search">
                 <form action="/buscar" method="GET">
                     <input type="search" name="q" placeholder="Buscar..." aria-label="Buscar">
@@ -34,25 +41,23 @@
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <circle cx="11" cy="11" r="8"></circle>
                             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                        </svg>    
+                        </svg>
                     </button>
-                </form>    
+                </form>
             </div>
-
-             <!-- Enlaces de navegación -->
+    
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="catalogo.html" aria-current="page">Catálogo</a></li>
                 <li><a href="personaliza.html" class="btn-highlight">Personaliza tu Torta</a></li>
                 <li><a href="funciona.html">Cómo Funciona</a></li>
                 <li><a href="clientes.html">Galería de Clientes</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
-
-            <!-- Acciones a la derecha -->
+    
             <div class="nav-actions">
                 <a href="cotizar.html" class="btn-primary">Cotizar Torta</a>
-                <a href="#carrito" class="btn-icon cart-btn" aria-label="Carrito">
+                <a href="carrito.html" class="btn-icon cart-btn" aria-label="Carrito">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
                         <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -60,14 +65,14 @@
                     </svg>
                     <span class="badge">0</span>
                 </a>
-                <a href="#cuenta" class="btn-icon account-btn" aria-label="Cuenta">
+                <a href="cuenta.html" class="btn-icon account-btn" aria-label="Cuenta">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                         <circle cx="12" cy="7" r="4"></circle>
                     </svg>
                 </a>
             </div>
-        </nav>    
+        </nav>
     </header>
 
     <!-- 2. Sección: Encabezado y filtros de Catálogo-->
@@ -416,7 +421,6 @@
     <!-- 5. FOOTER PRINCIPAL -->
     <footer>
         <div class="footer-container">
-            <!-- Columna 1: Marca y Redes -->
             <div class="footer-brand">
                 <h3 class="brand-title">
                     <img src="../src/assets/images/Logo Gaton V2.png" alt="TortasGatonV2 Logo" width="25" class="footer-logo"> 
@@ -428,16 +432,15 @@
                     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Instagram">
                         <i class="fa-brands fa-square-instagram" aria-hidden="true"></i>   
                     </a>
-                    <a href="https://wa.me" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Chat de WhatsApp">
+                    <a href="https://wa.me/5491134567890" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Chat de WhatsApp">
                         <i class="fa-brands fa-square-whatsapp" aria-hidden="true"></i>
                     </a>
-                    <a href="mailto:tu-correo@ejemplo.com" class="btn" aria-label="Correo Electrónico">
+                    <a href="mailto:pedidos@tortasgaton.com" class="btn" aria-label="Correo Electrónico">
                         <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
-
-            <!-- Columna 2: Políticas de Anticipación -->
+    
             <div class="footer-links">
                 <h4>Políticas de Anticipación</h4>
                 <p>Para garantizar la frescura y el detalle artesanal:</p>
@@ -447,16 +450,14 @@
                     <li><strong>Diseños de bodas y grandes eventos:</strong> Se sugiere reservar con <strong>2 a 4 semanas</strong>.</li>
                 </ul>
             </div>
-
-            <!-- Columna 3: Entregas y Cobertura -->
+    
             <div class="footer-info">
                 <h4>Entregas y Cobertura</h4>
                 <p>Envíos en vehículos climatizados especializados en pastelería delicada o retiro directo en nuestro atelier.</p>
                 <p><strong>Zonas de despacho:</strong> Cobertura urbana y alrededores.</p>
                 <p>Franjas horarias puntuales coordinadas previamente. Embalajes reforzados de grado alimentario.</p>
             </div>
-
-            <!-- Columna 4: Garantía y Calidad -->
+    
             <div class="footer-warranty">
                 <h4>Garantía y Calidad</h4>
                 <p>Ingredientes de origen certificado, chocolate belga, mantequilla pura y frutas de estación.</p>
@@ -467,14 +468,13 @@
                 </div>
             </div>
         </div>
-
-        <!-- Barra Inferior (Copyright y Enlaces Secundarios) -->
+    
         <div class="footer-bottom">
-            <p>&copy; 2025 TortasGaton Atelier. Todos los derechos reservados.</p>
+            <p>&copy; 2026 TortasGaton Atelier. Todos los derechos reservados.</p>
             <ul class="footer-legal">
                 <li><a href="funciona.html#faq">Preguntas Frecuentes</a></li>
-                <li><a href="#terminos">Términos de Servicio</a></li>
-                <li><a href="#privacidad">Privacidad</a></li>
+                <li><a href="terminos.html#terminos">Términos de Servicio</a></li>
+                <li><a href="privacidad.html#privacidad">Privacidad</a></li>
             </ul>
         </div>
     </footer>
